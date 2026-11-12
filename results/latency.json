@@ -1,0 +1,37 @@
+{
+ "model": "base.en",
+ "cpu": "8-core laptop CPU, 6 threads",
+ "bulk": {
+  "n": 247,
+  "transcribe_ms_p50": 2394.1,
+  "transcribe_ms_p95": 7710.0,
+  "realtime_factor_median": 0.081,
+  "e2e_ms_p50": 392720.9,
+  "e2e_ms_p95": 702402.5,
+  "note": "e2e in bulk mode includes queue wait (all captures uploaded at once): not a latency number"
+ },
+ "realtime": {
+  "n": 8,
+  "transcribe_ms_p50": 1530.5,
+  "transcribe_ms_p95": 1965.8,
+  "realtime_factor_median": 0.051,
+  "e2e_ms_p50": 1685.6,
+  "e2e_ms_p95": 3140.3
+ },
+ "quantized": {
+  "int8": {
+   "p50_ms": 2350.1,
+   "p95_ms": 8846.0,
+   "mean_ms": 3030.2,
+   "wer": 0.217
+  },
+  "float32": {
+   "p50_ms": 3622.7,
+   "p95_ms": 6104.0,
+   "mean_ms": 3807.1,
+   "wer": 0.2108
+  },
+  "speedup_mean": 1.26,
+  "clips": "30 x 30 s from ES2008a"
+ }
+}

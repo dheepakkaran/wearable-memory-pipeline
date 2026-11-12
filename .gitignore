@@ -1,0 +1,11 @@
+.env
+.venv/
+.pixi/
+.local/
+.cache/
+data/raw/
+data/ami/
+__pycache__/
+*.pyc
+results/raw_transcripts*.jsonl
+data/pixi.log

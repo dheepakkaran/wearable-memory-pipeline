@@ -1,0 +1,46 @@
+{
+ "ES2002a": [
+  "The industrial designer will work on the working design of the remote.",
+  "The user interface designer will work on the technical functions of the remote.",
+  "The marketing executive will work on what requirements the remote has to fulfill"
+ ],
+ "ES2005a": [
+  "The Marketing Expert will examine the features and design of competitors' remotes.",
+  "The User Interface Designer will research possible shapes and colors for the device.",
+  "The Industrial Designer will research possible materials and the necessary internal components of the device."
+ ],
+ "ES2006a": [
+  "The marketing expert will work on user requirements specification.",
+  "The interface specialist will look at the working design.",
+  "The industrial designer will work on the technical functions design.",
+  "They will get specific instructions when they get back to their workspace."
+ ],
+ "ES2008a": [
+  "The project manager will investigate whether the team is to create a remote that is to be sued solely with televisions.",
+  "The industrial designer will work on the working design.",
+  "The user interface designer will work on technical functions.",
+  "The project manager will type up the minutes of the current meeting and e-mail those to the team members.",
+  "The project manager will e-mail her slides to the team members"
+ ],
+ "ES2010a": [
+  "The Industrial Designer will work on the internal working design.",
+  "The User Interface Designer will work on the technical function design.",
+  "The Marketing Expert will research user requirements."
+ ],
+ "ES2013a": [
+  "The industrial designer will work on the working design.",
+  "The user interface designer will work on the technical functions design.",
+  "The marketing expert will work on the user requirements specification"
+ ],
+ "IS1008a": [
+  "The Marketing Expert will prepare a sales plan for the product and discuss the project budget and the sales strategy.",
+  "The Industrial Designer will prepare an initial functional design.",
+  "The User Interface Designer will contribute studies on user requirements to the functional design.",
+  "The Project Manager will post his presentation to be available for all participants."
+ ],
+ "IS1009a": [
+  "The industrial designer will work on the working design and technical function.",
+  "The interface specialist will do the working design and functional design.",
+  "The marketing manager will look for user requirement specifications such as friendliness"
+ ]
+}

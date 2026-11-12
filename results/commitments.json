@@ -1,0 +1,2273 @@
+{
+ "rule/whisper": {
+  "recall": 0.679,
+  "precision_lower_bound": 0.108,
+  "gold": 28,
+  "gold_hit": 19,
+  "pred": 223,
+  "pred_hit": 24,
+  "escalated": 0,
+  "windows": 0,
+  "dropped_invalid": 0,
+  "pipeline_usd": 0,
+  "judge_usd": 0.0299,
+  "usd_by_step": {
+   "judge": 0.02991
+  },
+  "calls_by_model": {
+   "claude-sonnet-5-5": 0
+  },
+  "per_meeting": {
+   "ES2002a": {
+    "gold": [
+     "The industrial designer will work on the working design of the remote.",
+     "The user interface designer will work on the technical functions of the remote.",
+     "The marketing executive will work on what requirements the remote has to fulfill"
+    ],
+    "pred": [
+     "I'll plug it in the back, but...",
+     "And this is just what we're going to be doing over the next 25 minutes.",
+     "And oh, I have to record he's here actually.",
+     "So we're going to have individual work and then a meeting about it and repeat that process.",
+     "and when plant leaves comes real, I'm going to be up there with them.",
+     "I'll have to get you up again.",
+     "I don't know what mine is, I'm gonna have to think I'm a spot man.",
+     "I still didn't know what I'm going to write about.",
+     "I was going to choose a dog as well, but I just do a different kind of dog.",
+     "We now need to discuss the project finance.",
+     "So according to the brief, we're going to be selling this remote control for 25 euro.",
+     "50 million euro and so we're gonna be selling this one an international scale and We don't want it to cost anymore than 1250 euros so 50% of the selling price Can we just go over that again sure So All right, yeah, so cost like production cost is all together 12.50 but selling.",
+     "like how much money people have to spend on things.",
+     "Good marketing, so I should be writing all this down.",
+     "one way looking at it would be well the people producing television sets maybe they have to buy remote controls or another way is maybe people who have TV sets are really fed up with their remote control and they really want a better one or something.",
+     "I'm going to have to wrap up pretty quickly in the last couple of minutes.",
+     "I'll just check if nothing else.",
+     "that doesn't make it any better but that just the appeal of not having you know these days it's every few things in people's homes are becoming more and more like chic you know nicer materials and okay might be okay worth exploring right well so it is to wrap up the next meeting is gonna be in 30 minutes so that's about about 10 to 12 by my watch and so in between nine then",
+     "As the industrial designer, you're going to be working on the actual working design of it, so you know what you're doing there.",
+     "And marketing executive, you'll be just thinking about what it actually, what requirements it has to fulfill.",
+     "and you'll all get instructions emailed to you I guess.",
+     "Alright, I'll see you guys good luck to your..."
+    ],
+    "matches": [
+     [
+      "P18"
+     ],
+     [],
+     [
+      "P19"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "ES2005a": {
+    "gold": [
+     "The Marketing Expert will examine the features and design of competitors' remotes.",
+     "The User Interface Designer will research possible shapes and colors for the device.",
+     "The Industrial Designer will research possible materials and the necessary internal components of the device."
+    ],
+    "pred": [
+     "So it's gonna have to be pretty handy All your more controls I've used usually come with the television.",
+     "And as you say, we need to have some kind of gimmick.",
+     "Being as a marketing expert, I will like to say like before deciding the cost of this remote control and the things we must see the market potential for this product like.",
+     "And apart from this, it should be having a good look also.",
+     "I need to lose.",
+     "Okay, well we'll have to...",
+     "We'll have an hour meeting a half now.",
+     "which I'll look into a bit.",
+     "and I will get, I'm sorry, second.",
+     "We'll get warnings for next meetings as well.",
+     "It should take you to our corporate website."
+    ],
+    "matches": [
+     [
+      "P2"
+     ],
+     [],
+     []
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "ES2006a": {
+    "gold": [
+     "The marketing expert will work on user requirements specification.",
+     "The interface specialist will look at the working design.",
+     "The industrial designer will work on the technical functions design.",
+     "They will get specific instructions when they get back to their workspace."
+    ],
+    "pred": [
+     "Then the main purpose is to so that we get to know each other a little bit more.",
+     "Then we want to practice using some of the tools that we'll be using during the course of the design project and the meetings.",
+     "Then we need to go through the specifics of our project plan and discuss, come up with some preliminary ideas about it.",
+     "What we're aiming to do is to create a new remote control for a television.",
+     "method that we're going to use to complete the project that has three components as such.",
+     "The way we'll do that I think is to work individually, initially, and then come together for meetings to work on that.",
+     "Similarly, with the conceptual design, we'll start off by working individually with our own expertise expertise on our own laptops and then we'll bring what we've done together.",
+     "We'll pull it all together.",
+     "I think we're talking that the functional design is more your area of things where you'll be...",
+     "I think we'll start that initially with the functional design already.",
+     "You don't have to hurry we've got plenty of time",
+     "Yeah, well, originally at first I thought it was going to be cat.",
+     "but you know, and I like it because it's small and it's fluffy and one day you'll be able to genetically genetically modify them and they will come in pink.",
+     "So like, I'm going to be doing the, apparently, according to the little guy on the computer that knows everything, the user requirements specification of the functional design, trend watching in the conceptual design, and product evaluation in the detailed design.",
+     "I think it needs four legs if it's going to walk.",
+     "So in the different stages of the design, so at first I will be responsible for designing the technical functions of the remote control.",
+     "Then in the conceptual design stage, I need to come up with a",
+     "interface concept and then in the last stage I will be responsible for the for the user interface design.",
+     "I'll wrap the features of the drawing Thanks, too.",
+     "This is going to be...",
+     "My role in the project is industrial designer, so I'm supposed to design all the details of the product, how it works and whatever it will take during the functional role, what are the various functions that have to be found by it during the conceptual design, what are the various components of it.",
+     "Let's see what's next in the PowerPoint presentation.",
+     "We're planning to sell these remote controls for, let's make that go away, that means we've got five minutes.",
+     "I think in the beginning one thing was that was mentioned was that it should be trendy, user-friendly and original.",
+     "So I think your point is relevant as far as the originality is concerned that we should provide some features that are quite unique to this.",
+     "Every now and then you need to replace the batteries.",
+     "So it should kind of fit in as well.",
+     "Okay, so we need to wrap it up now so that we can go away and get on with some of this.",
+     "We've got another meeting in 30 minutes, so you'll be getting specific instructions once you go back to your workspace.",
+     "I'll see you in half an hour."
+    ],
+    "matches": [
+     [
+      "P13"
+     ],
+     [
+      "P17"
+     ],
+     [
+      "P15",
+      "P8"
+     ],
+     [
+      "P28"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "ES2008a": {
+    "gold": [
+     "The project manager will investigate whether the team is to create a remote that is to be sued solely with televisions.",
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on technical functions.",
+     "The project manager will type up the minutes of the current meeting and e-mail those to the team members.",
+     "The project manager will e-mail her slides to the team members"
+    ],
+    "pred": [
+     "I'm really excited to start this team I'm just gonna have a little PowerPoint presentation for us for kickoff meeting.",
+     "I'll be the project manager Our agenda today is we're gonna do a little opening and then I'm gonna talk a little bit about the project Then we'll move into acquaintance that just getting to know each other a little bit including a tool training exercise I'm the one move into the project plan do a little discussion and",
+     "So we're going to divide this up into three parts.",
+     "First, the functional design, which will be first, we'll do individual work coming to a meeting, the conceptual design, individual work in a meeting.",
+     "So that we'll each be doing our own ideas and then coming together and collaborating.",
+     "Okay, we're going to get to know each other a little bit.",
+     "So what we're going to do is start off with, let's start off with Amina, <PERSON>, sorry, <PERSON>.",
+     "We're going to do a little tool training.",
+     "So we're going to work with that whiteboard behind you.",
+     "I don't know which one of those things I have to bring with me.",
+     "I have no drawing skills whatsoever, but let's see, introduce myself.",
+     "So let's see if I can get here.",
+     "I will draw a little turtle for you all, necessarily because it's my absolute favorite animal, but just that I think they're drawable.",
+     "I'm not going to do it quite this girl.",
+     "And we're going to keep the deep sea sort of theme going on with our animals, don't really know how to draw them.",
+     "I'm not going to try and pretend like it can get any better than that.",
+     "Let's give it a little bit of a snap.",
+     "We're going to talk about project finances.",
+     "We don't have to worry about specifics.",
+     "In order to make a profit of this magnitude, we need to be able to produce each one at maximum of 1250.",
+     "I hate when there's four different buttons and you have to press to actually turn on the TV like you have to do one for the power of the TV and then another one to get the actual screen on and something else to get it all going.",
+     "You don't have to get up and walk across the main channel.",
+     "You know, you need to know what you're doing.",
+     "And one thing I particularly like is if you're not sort of moving it around to get it to work with the infrared Yeah, I think there's a way around that but I know in my residence right now the television you sort of have to walk all around the room to turn on so it's just simpler Just to just turn around the TV itself and I think that's if you're gonna make a remote control It should actually work for what it's doing about like batteries and things like that.",
+     "Could we get something that just has, you know, doesn't have all the buttons that you need to program the video recorder or programs, other things that I'm not very going to.",
+     "I don't know if it would be vertical or horizontal in terms of how we're going to make it.",
+     "Yeah, and if you'd save the more complicated functions, maybe for separate remotes, that you wouldn't need to use every day.",
+     "So you have to have them somewhere, because you're going to need those special functions occasionally.",
+     "I'll look into it.",
+     "Maybe we should have seen that today.",
+     "So I guess we have to define what we're aiming for.",
+     "If it's just a television, then that it's a bit simpler, because there's less buttons that would even need to be on it.",
+     "Now our next meeting starts in 30 minutes.",
+     "This is just a breakdown of what we'll be doing individually.",
+     "The Industrial Design, <PERSON>, we'll be doing the working design.",
+     "So you'll be hearing about different trends, about different things that people need.",
+     "Okay, and you will get specific instructions sent by your personal coach.",
+     "I'll put that together.",
+     "I'm sure as we'll lead to get our own instructions and then Because what we're gonna do is first our individual actions and then we'll come back together Sure, we'll all have more concrete",
+     "Okay, I'll type up minutes and probably email those out to all of you, just including all the things that we talked about.",
+     "I'll just attach it to an email."
+    ],
+    "matches": [
+     [
+      "P28"
+     ],
+     [
+      "P34"
+     ],
+     [],
+     [
+      "P39"
+     ],
+     [
+      "P40"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "ES2010a": {
+    "gold": [
+     "The Industrial Designer will work on the internal working design.",
+     "The User Interface Designer will work on the technical function design.",
+     "The Marketing Expert will research user requirements."
+    ],
+    "pred": [
+     "Hi everybody, welcome to our kickoff meeting for our new product that we're going to be designing.",
+     "Alright, okay, so first let's go through this PowerPoint.",
+     "We're gonna start with our opening which was our introductions.",
+     "We're gonna get to know each other a little bit better.",
+     "We're going to make a project plan and then have some time for discussion and close up the meeting.",
+     "We're going to make a new remote control that's original, trendy, and also user-friendly.",
+     "how we're going to do it is each of us is going to...",
+     "We're going to have discussed the functional design first.",
+     "And we're going to do individual work on that and then meet.",
+     "And then we're going to do individual work.",
+     "Alright, first we're going to start off by using our tools.",
+     "I think we should forego the whiteboard since we can't actually see what we're writing.",
+     "Alright, let's go for it then.",
+     "Right now, so we're all going to draw our favorite animal and then sum up our favorite characteristics of that animal.",
+     "You don't really have to.",
+     "The selling price for our remote is going to be 25 euro and our profit aim is 50 million euro.",
+     "We're going to make the",
+     "And our production costs to make that profit is going to be a max of 1250 euro per remote.",
+     "So we're going to talk for a little while.",
+     "We need an insanely good instruction booklet because you always have to reconfigure all your",
+     "Yeah, I guess then it We need to do triple a we can but most people usually have the ways around okay, yeah But that has to do with the size of it too Well as long as we know that issue is Yeah, if we wanted to be more thin than we'd probably want to go with a triple a But go with a small lithium battery.",
+     "Next meeting is going to start in 30 minutes.",
+     "Here's what we're going to do.",
+     "You're going to think about the working design.",
+     "And the marketing person, <PERSON> is going to do the user requirements specification.",
+     "and you're gonna get more specific as you can see."
+    ],
+    "matches": [
+     [
+      "P23"
+     ],
+     [],
+     [
+      "P24"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "ES2013a": {
+    "gold": [
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on the technical functions design.",
+     "The marketing expert will work on the user requirements specification"
+    ],
+    "pred": [
+     "As you can see, our agenda is to open up the meeting, become acquainted with each other, have a little trainee on tools, create a plan, discuss things, and we only have 20 minutes, 25 minutes total.",
+     "The new root control is to be original, trendy, and user-friendly.",
+     "functionality is going to take all of us.",
+     "And we'll get on with it.",
+     "Okay, so we'll have a functional design.",
+     "<PERSON> why don't you try it first if you can Either bring your things with you I guess And while you're doing that we'll try and figure out how to hook these things on as well Right",
+     "I suppose it should have a mouth as well.",
+     "In fact, I'll give it some more.",
+     "Okay, now, we have to get down to the nitty gritty of how to make this and this remote control has to be sold.",
+     "The production is to only cost 12 and a half euros per item.",
+     "each and we're to make a profit of 50 million that's can you do the math and how many are we selling yeah I was just wondering if that's the 50% is a normal mark-up yeah I would think we'd be more like 60% but okay I have two thoughts That's going to be 50% in your question is how many.",
+     "You'd have to sell four million.",
+     "We have to think about that one.",
+     "We don't need to have the numbers.",
+     "I think there's going to be a lot of, we have to help each other and work through this as a group.",
+     "We like our kitty cat and our rat and our fish, but I think we all have to like each other to get this done As it says we're gonna get individual instructions But I don't think they will allow a lot of extra time So I think a little bit of less of this and more it do Will set us in good stead.",
+     "and we should finish this meeting right now and just go into other things."
+    ],
+    "matches": [
+     [],
+     [],
+     []
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "IS1008a": {
+    "gold": [
+     "The Marketing Expert will prepare a sales plan for the product and discuss the project budget and the sales strategy.",
+     "The Industrial Designer will prepare an initial functional design.",
+     "The User Interface Designer will contribute studies on user requirements to the functional design.",
+     "The Project Manager will post his presentation to be available for all participants."
+    ],
+    "pred": [
+     "project which we are going to discuss now.",
+     "And my role in this scenario is to be the industrial designer.",
+     "I think we will see that throughout the day and how we are going to put this together is a marketing tool.",
+     "We'll have to see through discussion on where we're going to go from here from with us.",
+     "Now this is like I said we have to be discussed between all of us and we'll go from there.",
+     "We'll have to Simply we have to work on together.",
+     "Certainly by the next meeting.",
+     "By next meeting, okay, it would be great.",
+     "the goal of the project I think maybe I'll hand out to the aid I'm in the sales I'm supposed to explain to what we have to define exactly what our project is from yes so can you explain what exactly the product is from what I had in mind we're supposed to be marketing coffee is that right I think I'm not",
+     "So we'll start with the remote control for television then.",
+     "So we have to design something that is very user friendly, something visually that has something that will draw people to buy the product.",
+     "Most of them, I don't know, we have to come up with a new idea on how to make it a lot easier to use because a lot of times spend half a day through the instruction book trying to figure out how to use it.",
+     "I just did see that we were starting a new project together and there was going to be a four-member team with composed of these people and And that's about that's and I read through this.",
+     "We have some idea how we can sell this product or project in the market and how much is going to benefit to the company and of course it's to the individual also.",
+     "Well you know I kind of think that in general you have to have something that's very fashionable that's very attractive that people see and recognize its goal.",
+     "So it would really would need to something like the iPod would be good.",
+     "right now and so I'll have to wait and see how those go.",
+     "So you have to meet with the marketing team and how they are going to market and what is the marketing strategy plan.",
+     "Yes, I think that will be good because I need to go to the management and tell them what we are going to do and what's cost stress, and what's the time frame and what's the project plan.",
+     "Because without any documentation, I cannot go to the management and say, okay, we are going to do this and we need this much money.",
+     "Okay, I'll get back to you on that.",
+     "Well, not yet other than doing research and taking remote controls and looking at what other companies have to do with their building, their designs, their ideas.",
+     "I also have to pinpoint which market we're going to go into.",
+     "Whether it works or not, they have to first say, I like this, I like the design, and then it's going to be simple to use.",
+     "So what I prefer, maybe you need to interact more with the <PERSON>, okay, because you know what she's going to do it, okay, and you know how to sell it, okay, because she is doing...",
+     "So because you need to sell any you are the responsible for all the money the finance.",
+     "So what I prefer okay so you need to interact with the Christian more and within her team who is using the functional design or technical design and you need to come up with some kind of plan.",
+     "Okay how we are going to do the your sales plan.",
+     "So the best thing is you both of the Christian and you discussed with yourself and come up with the cost and how we are going to compete in the market, technically or in the sales wise, the commercial wise.",
+     "Then we have to design how long it will take the whole project, how much is going to cost us and how much we are going to benefit for for the company.",
+     "So I think it's maybe if you can give me some kind of the sales plan including the technical what she's going to talk to you within the team, then it will help me to discuss with the management for further and put it in the proper project plan.",
+     "I mean my job from what I understood was to look at the usability requirements and make sure that the product is usable, it's acceptable to the people who are going to use it and and look at the best.",
+     "So I think I'll have to interact with <PERSON> and discuss with her so that she's not designing something that my studies will show right off the bat that it's not going to work.",
+     "So basically you need to interact with <PERSON> more okay for the user acceptability yeah and the testing",
+     "So I think all three groups will need to interact quite a bit and then I Guess build the plan based on all of that because then you need to take all the factors into account But what I request, okay, keep adding the loop.",
+     "meeting and Christian meeting because he should know what's happening.",
+     "I need to submit to the manager.",
+     "So the immediate next step is to start determining the functional design.",
+     "So come over with the functional design and to discuss with <PERSON>, okay, how it's going to be work and first of all with your user acceptance, okay, how it looks like and how it's going to work in the market.",
+     "So we'll meet when the world is on the further meeting."
+    ],
+    "matches": [
+     [
+      "P27",
+      "P28",
+      "P30",
+      "P26"
+     ],
+     [
+      "P37",
+      "P38"
+     ],
+     [
+      "P32",
+      "P33"
+     ],
+     []
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "IS1009a": {
+    "gold": [
+     "The industrial designer will work on the working design and technical function.",
+     "The interface specialist will do the working design and functional design.",
+     "The marketing manager will look for user requirement specifications such as friendliness"
+    ],
+    "pred": [
+     "My role is the main responsibilities user interface and my role is to design a television remote control.",
+     "We get each of us will get instructions and we'll take it from there project plan that falls under the same heading pretty much.",
+     "what this thing should be.",
+     "This thing we are going to design is a new remote control should be original, trendy, and of course user friendly.",
+     "That is, it's going to be individual work and then at the meeting we'll discuss what...",
+     "different types of design that we're going to be concerned with.",
+     "Maybe we should redesign it.",
+     "After we finish the remote control we'll get to that.",
+     "to in the next meeting present something on the whiteboard.",
+     "Okay, I'll see what I can do.",
+     "And remember you have to press so it works.",
+     "I'm going to draw a snake.",
+     "Here's a project finance, which of course we all have to think about when we design this thing.",
+     "And the production cost should not exceed.",
+     "hopefully should be less than 1250 euro.",
+     "Okay, that should keep everybody on their toes and challenged.",
+     "Yes, I feel that all the remote should be very compact.",
+     "And it should have multi-purpose.",
+     "Like the remote control which we use for TV, it should be used for some other purpose also like",
+     "Controlling the temperature inside the house for air conditioners for heating system So it should be a multi functional gadget that would control all your household Machines basically 1250 euros per Well, I know so we get a really good sign or maybe we can do that We certainly can try to agree.",
+     "with her that to market something successfully it should do some more things.",
+     "It should be something new.",
+     "It should do something different than just what we have.",
+     "Yeah, design should be different.",
+     "Like trendy, you know, like, for every so maybe it should be something trendy, you know.",
+     "A light should blink.",
+     "Yeah, maybe it should have a light so that we can just recognize where it is.",
+     "That's right, you know, it would be right You have to have some kind of sensor and I think voice or clapping that's not specific enough I know they're the lamps and stuff, you know, you can clap on and off But I think they only work to certain degree But it could be someplace really obvious.",
+     "Well, if we're like on top of your bookcase and you usually kept it on the coffee table, we have to move along.",
+     "Yeah, we have to move along.",
+     "OK, the next meeting will be in 30 minutes.",
+     "I mean the price is given but that was We have to justify that that's right having sufficient features to make it sell that that's right",
+     "And you will get specific instructions for that.",
+     "I think basically you will get instructions.",
+     "instructions to work with and if you have any questions, I guess you can Okay, I think I have enough to think about our next meeting.",
+     "So now we have to give it here."
+    ],
+    "matches": [
+     [
+      "P1",
+      "P33"
+     ],
+     [
+      "P1",
+      "P33"
+     ],
+     [
+      "P1",
+      "P33"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   }
+  }
+ },
+ "haiku/whisper": {
+  "recall": 0.679,
+  "precision_lower_bound": 0.5,
+  "gold": 28,
+  "gold_hit": 19,
+  "pred": 44,
+  "pred_hit": 22,
+  "escalated": 0,
+  "windows": 0,
+  "dropped_invalid": 0,
+  "pipeline_usd": 0.0136,
+  "judge_usd": 0.0192,
+  "usd_by_step": {
+   "extract": 0.0136,
+   "judge": 0.01915
+  },
+  "calls_by_model": {
+   "claude-haiku-5-5": 29,
+   "claude-sonnet-5-5": 0
+  },
+  "per_meeting": {
+   "ES2002a": {
+    "gold": [
+     "The industrial designer will work on the working design of the remote.",
+     "The user interface designer will work on the technical functions of the remote.",
+     "The marketing executive will work on what requirements the remote has to fulfill"
+    ],
+    "pred": [
+     "The next meeting will be held in 30 minutes, around 10 to 12 by the speaker's watch.",
+     "The industrial designer will work on the actual working design of the remote control.",
+     "The marketing executive will think about the requirements the remote control has to fulfill."
+    ],
+    "matches": [
+     [
+      "P1"
+     ],
+     [],
+     [
+      "P2"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 3
+    }
+   },
+   "ES2005a": {
+    "gold": [
+     "The Marketing Expert will examine the features and design of competitors' remotes.",
+     "The User Interface Designer will research possible shapes and colors for the device.",
+     "The Industrial Designer will research possible materials and the necessary internal components of the device."
+    ],
+    "pred": [
+     "Look at other remote controls and come up with suggested shapes and shades for the new remote.",
+     "Research how remote controls are made and which materials are available.",
+     "Look at shapes and colors to make the remote control attractive and check the competition."
+    ],
+    "matches": [
+     [
+      "P2"
+     ],
+     [
+      "P0",
+      "P2"
+     ],
+     [
+      "P1"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 3
+    }
+   },
+   "ES2006a": {
+    "gold": [
+     "The marketing expert will work on user requirements specification.",
+     "The interface specialist will look at the working design.",
+     "The industrial designer will work on the technical functions design.",
+     "They will get specific instructions when they get back to their workspace."
+    ],
+    "pred": [
+     "The team will work individually on the functional design first, then come together in meetings to combine the work.",
+     "Each person will go up to the whiteboard, draw their favourite animal, describe its favourite characteristics, and say their name.",
+     "Marketing expert will do trend watching in the conceptual design phase.",
+     "Designing the technical functions of the remote control in the first design stage.",
+     "Coming up with an interface concept in the conceptual design stage.",
+     "Responsible for the user interface design in the last design stage.",
+     "Designing all the details of the product, including how it works and its components.",
+     "Everyone should think about specific features that could be included in the remote control before the next meeting.",
+     "Team members will receive specific instructions once they return to their workspace.",
+     "The next meeting is in 30 minutes.",
+     "Participants will work on the technical functions design and the user requirements specification before the next meeting."
+    ],
+    "matches": [
+     [
+      "P10"
+     ],
+     [
+      "P4",
+      "P5"
+     ],
+     [
+      "P3",
+      "P6",
+      "P10"
+     ],
+     [
+      "P8"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 11
+    }
+   },
+   "ES2008a": {
+    "gold": [
+     "The project manager will investigate whether the team is to create a remote that is to be sued solely with televisions.",
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on technical functions.",
+     "The project manager will type up the minutes of the current meeting and e-mail those to the team members.",
+     "The project manager will e-mail her slides to the team members"
+    ],
+    "pred": [
+     "Each team member introduces themselves, says one thing about themselves, and draws their favorite animal on the whiteboard to explain it.",
+     "Each team member does individual work on their ideas before each meeting.",
+     "Look into whether video recorder functions can be included on the remote control.",
+     "Investigate whether video recorder functions can technically be included on the remote.",
+     "The industrial designer will do the working design, keeping in mind technical functions such as button placement and button size.",
+     "The meeting facilitator will type up minutes including everything discussed and email them to all attendees.",
+     "Each member will carry out their individual actions first, then the group will come back together to share more concrete contributions.",
+     "Team members will receive specific instructions sent by their personal coach."
+    ],
+    "matches": [
+     [
+      "P2",
+      "P3"
+     ],
+     [
+      "P4"
+     ],
+     [],
+     [
+      "P5"
+     ],
+     []
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 8
+    }
+   },
+   "ES2010a": {
+    "gold": [
+     "The Industrial Designer will work on the internal working design.",
+     "The User Interface Designer will work on the technical function design.",
+     "The Marketing Expert will research user requirements."
+    ],
+    "pred": [
+     "Each team member will do individual work on the functional design, then the group will meet to discuss it.",
+     "The industrial designer will think about the working design before the next meeting.",
+     "The team will hold the next meeting in 30 minutes.",
+     "The marketing person will write the user requirements specification.",
+     "Instructions will be emailed to the team members."
+    ],
+    "matches": [
+     [
+      "P1"
+     ],
+     [],
+     [
+      "P3"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 5
+    }
+   },
+   "ES2013a": {
+    "gold": [
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on the technical functions design.",
+     "The marketing expert will work on the user requirements specification"
+    ],
+    "pred": [
+     "The trendiness aspect of the remote control will likely get marketing research information from the marketing team member.",
+     "Everybody is supposed to try out the whiteboard, with one person going first.",
+     "The group will meet again after individual instructions are received, with less discussion and more action."
+    ],
+    "matches": [
+     [],
+     [],
+     []
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 3
+    }
+   },
+   "IS1008a": {
+    "gold": [
+     "The Marketing Expert will prepare a sales plan for the product and discuss the project budget and the sales strategy.",
+     "The Industrial Designer will prepare an initial functional design.",
+     "The User Interface Designer will contribute studies on user requirements to the functional design.",
+     "The Project Manager will post his presentation to be available for all participants."
+    ],
+    "pred": [
+     "A project plan is to be provided by the next meeting.",
+     "Provide a written project plan with functional design, technical design, staffing, timeline and initial budget within two weeks.",
+     "Get back with the people needed from marketing, technical and administration to contribute to the plan.",
+     "The marketing person will interact more with the industrial designer and her team on the functional design to build a sales plan.",
+     "The marketing person and the industrial designer will agree on a cost and a competitive market approach, then share the sales plan with the project manager.",
+     "The user interface person will bring the functional design to the next meeting and discuss it with the industrial designer, starting with user acceptance."
+    ],
+    "matches": [
+     [
+      "P3",
+      "P4"
+     ],
+     [
+      "P3"
+     ],
+     [
+      "P5"
+     ],
+     []
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 6
+    }
+   },
+   "IS1009a": {
+    "gold": [
+     "The industrial designer will work on the working design and technical function.",
+     "The interface specialist will do the working design and functional design.",
+     "The marketing manager will look for user requirement specifications such as friendliness"
+    ],
+    "pred": [
+     "The project manager will have the team meet again to discuss individual design work.",
+     "Someone will present something on the whiteboard at the next meeting, with a volunteer offering to try.",
+     "The next meeting will be held in 30 minutes.",
+     "The industrial designer will bring a working design to the next meeting, a mechanical functional design.",
+     "The marketing manager will come up with user requirements specification covering friendliness and price."
+    ],
+    "matches": [
+     [
+      "P3"
+     ],
+     [],
+     [
+      "P4"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 5
+    }
+   }
+  }
+ },
+ "routed/whisper": {
+  "recall": 0.679,
+  "precision_lower_bound": 0.69,
+  "gold": 28,
+  "gold_hit": 19,
+  "pred": 29,
+  "pred_hit": 20,
+  "escalated": 4,
+  "windows": 29,
+  "dropped_invalid": 0,
+  "pipeline_usd": 0.1347,
+  "judge_usd": 0.0179,
+  "usd_by_step": {
+   "extract": 0.0136,
+   "merge": 0.08905,
+   "summary": 0.00372,
+   "judge": 0.01792,
+   "extract-retry": 0.02834
+  },
+  "calls_by_model": {
+   "claude-haiku-5-5": 37,
+   "claude-opus-5-5": 8,
+   "claude-sonnet-5-5": 4
+  },
+  "per_meeting": {
+   "ES2002a": {
+    "gold": [
+     "The industrial designer will work on the working design of the remote.",
+     "The user interface designer will work on the technical functions of the remote.",
+     "The marketing executive will work on what requirements the remote has to fulfill"
+    ],
+    "pred": [
+     "The team will reconvene for the next meeting in 30 minutes, at about 11:50.",
+     "The industrial designer will work on the actual working design of the remote control.",
+     "The marketing executive will define the requirements the remote control has to fulfill."
+    ],
+    "matches": [
+     [
+      "P1"
+     ],
+     [],
+     [
+      "P2"
+     ]
+    ],
+    "stats": {
+     "windows": 5,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 5
+    }
+   },
+   "ES2005a": {
+    "gold": [
+     "The Marketing Expert will examine the features and design of competitors' remotes.",
+     "The User Interface Designer will research possible shapes and colors for the device.",
+     "The Industrial Designer will research possible materials and the necessary internal components of the device."
+    ],
+    "pred": [
+     "Come up with shapes and suggested colour shades to make the remote control attractive.",
+     "Look into how remote controls are made and which materials are available."
+    ],
+    "matches": [
+     [],
+     [
+      "P0"
+     ],
+     [
+      "P1"
+     ]
+    ],
+    "stats": {
+     "windows": 2,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 4
+    }
+   },
+   "ES2006a": {
+    "gold": [
+     "The marketing expert will work on user requirements specification.",
+     "The interface specialist will look at the working design.",
+     "The industrial designer will work on the technical functions design.",
+     "They will get specific instructions when they get back to their workspace."
+    ],
+    "pred": [
+     "Each team member will think about specific features that could be included in the remote control and bring them to the next meeting.",
+     "The industrial designer will design the technical functions of the remote control, including all product details, how it works, and its components, in the first design stage.",
+     "The speaker will come up with an interface concept in the conceptual design stage.",
+     "The speaker will be responsible for the user interface design in the last design stage."
+    ],
+    "matches": [
+     [],
+     [
+      "P2",
+      "P3"
+     ],
+     [
+      "P1"
+     ],
+     []
+    ],
+    "stats": {
+     "windows": 5,
+     "escalated": 1,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 9
+    }
+   },
+   "ES2008a": {
+    "gold": [
+     "The project manager will investigate whether the team is to create a remote that is to be sued solely with televisions.",
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on technical functions.",
+     "The project manager will type up the minutes of the current meeting and e-mail those to the team members.",
+     "The project manager will e-mail her slides to the team members"
+    ],
+    "pred": [
+     "Look into whether video recorder functions can be included on the remote control.",
+     "The industrial designer will do the working design, keeping technical functions such as button size in mind.",
+     "The user interface designer will gather requirements from trends and consumer needs.",
+     "The meeting leader will put together an agenda.",
+     "The meeting leader will type up the minutes and email them to all team members."
+    ],
+    "matches": [
+     [
+      "P0"
+     ],
+     [
+      "P1"
+     ],
+     [],
+     [
+      "P4"
+     ],
+     []
+    ],
+    "stats": {
+     "windows": 4,
+     "escalated": 2,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 7
+    }
+   },
+   "ES2010a": {
+    "gold": [
+     "The Industrial Designer will work on the internal working design.",
+     "The User Interface Designer will work on the technical function design.",
+     "The Marketing Expert will research user requirements."
+    ],
+    "pred": [
+     "Each team member will do individual work on the functional design, and the team will reconvene for the next meeting in 30 minutes.",
+     "The industrial designer will think about the working design.",
+     "The marketing person will do the user requirements specification.",
+     "Instructions will be emailed to the team shortly after the meeting."
+    ],
+    "matches": [
+     [
+      "P1"
+     ],
+     [],
+     [
+      "P2"
+     ]
+    ],
+    "stats": {
+     "windows": 3,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 6
+    }
+   },
+   "ES2013a": {
+    "gold": [
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on the technical functions design.",
+     "The marketing expert will work on the user requirements specification"
+    ],
+    "pred": [
+     "The marketing expert will provide marketing research information to inform the remote control's trendiness."
+    ],
+    "matches": [
+     [],
+     [],
+     [
+      "P0"
+     ]
+    ],
+    "stats": {
+     "windows": 3,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 2
+    }
+   },
+   "IS1008a": {
+    "gold": [
+     "The Marketing Expert will prepare a sales plan for the product and discuss the project budget and the sales strategy.",
+     "The Industrial Designer will prepare an initial functional design.",
+     "The User Interface Designer will contribute studies on user requirements to the functional design.",
+     "The Project Manager will post his presentation to be available for all participants."
+    ],
+    "pred": [
+     "Provide a written project plan covering functional design, technical design, staffing, timeline, and initial budget by the next meeting, within about two weeks.",
+     "Get back to the other party about which marketing, technical, or administration people are needed for the plan.",
+     "Pinpoint which market the product will enter.",
+     "Work more closely with the designer and her team and come up with a sales plan covering cost and how to compete in the market.",
+     "Meet with the designer to make sure the design does not conflict with the usability study findings.",
+     "Start determining the functional design and discuss it with the designer and user acceptance.",
+     "Send a copy of the slides to the team."
+    ],
+    "matches": [
+     [
+      "P3"
+     ],
+     [
+      "P5"
+     ],
+     [
+      "P4"
+     ],
+     [
+      "P6"
+     ]
+    ],
+    "stats": {
+     "windows": 4,
+     "escalated": 1,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 8
+    }
+   },
+   "IS1009a": {
+    "gold": [
+     "The industrial designer will work on the working design and technical function.",
+     "The interface specialist will do the working design and functional design.",
+     "The marketing manager will look for user requirement specifications such as friendliness"
+    ],
+    "pred": [
+     "Team members will do individual work on the functional design and present it on the whiteboard for discussion at the next meeting in 30 minutes.",
+     "The industrial designer will produce a working mechanical functional design for the next meeting.",
+     "The marketing manager will come up with a user requirements specification covering friendliness and features."
+    ],
+    "matches": [
+     [
+      "P1"
+     ],
+     [
+      "P0"
+     ],
+     [
+      "P2"
+     ]
+    ],
+    "stats": {
+     "windows": 3,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 6
+    }
+   }
+  }
+ },
+ "opus/whisper": {
+  "recall": 0.821,
+  "precision_lower_bound": 0.733,
+  "gold": 28,
+  "gold_hit": 23,
+  "pred": 30,
+  "pred_hit": 22,
+  "escalated": 0,
+  "windows": 29,
+  "dropped_invalid": 0,
+  "pipeline_usd": 0.4092,
+  "judge_usd": 0.0181,
+  "usd_by_step": {
+   "extract": 0.33591,
+   "merge": 0.07331,
+   "judge": 0.0181
+  },
+  "calls_by_model": {
+   "claude-opus-5-5": 37,
+   "claude-sonnet-5-5": 0
+  },
+  "per_meeting": {
+   "ES2002a": {
+    "gold": [
+     "The industrial designer will work on the working design of the remote.",
+     "The user interface designer will work on the technical functions of the remote.",
+     "The marketing executive will work on what requirements the remote has to fulfill"
+    ],
+    "pred": [
+     "The team will hold the next meeting in 30 minutes, at about ten to twelve.",
+     "The industrial designer will work on the actual working design of the remote control.",
+     "The marketing executive will think about what requirements the remote control has to fulfill."
+    ],
+    "matches": [
+     [
+      "P1"
+     ],
+     [],
+     [
+      "P2"
+     ]
+    ],
+    "stats": {
+     "windows": 5,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 3
+    }
+   },
+   "ES2005a": {
+    "gold": [
+     "The Marketing Expert will examine the features and design of competitors' remotes.",
+     "The User Interface Designer will research possible shapes and colors for the device.",
+     "The Industrial Designer will research possible materials and the necessary internal components of the device."
+    ],
+    "pred": [
+     "Come up with suggested shapes and shades of color to make the remote attractive.",
+     "Look into how the remote is made and which materials are available.",
+     "Research market competition, competitor prices and ease of use before the product is finalized."
+    ],
+    "matches": [
+     [
+      "P2"
+     ],
+     [
+      "P0"
+     ],
+     [
+      "P1"
+     ]
+    ],
+    "stats": {
+     "windows": 2,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 3
+    }
+   },
+   "ES2006a": {
+    "gold": [
+     "The marketing expert will work on user requirements specification.",
+     "The interface specialist will look at the working design.",
+     "The industrial designer will work on the technical functions design.",
+     "They will get specific instructions when they get back to their workspace."
+    ],
+    "pred": [
+     "Team members will work on their assigned parts, namely the working design, the technical functions design, and the user requirements specification, before the next meeting.",
+     "Everyone will think after the meeting about special features that could be included in the remote control.",
+     "The team will hold another meeting in 30 minutes."
+    ],
+    "matches": [
+     [
+      "P0"
+     ],
+     [
+      "P0"
+     ],
+     [
+      "P0"
+     ],
+     []
+    ],
+    "stats": {
+     "windows": 5,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 7
+    }
+   },
+   "ES2008a": {
+    "gold": [
+     "The project manager will investigate whether the team is to create a remote that is to be sued solely with televisions.",
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on technical functions.",
+     "The project manager will type up the minutes of the current meeting and e-mail those to the team members.",
+     "The project manager will e-mail her slides to the team members"
+    ],
+    "pred": [
+     "Look into whether the remote is for television only or should also include video recorder functions.",
+     "The team will work on their individual actions and then reconvene for the next meeting in 30 minutes.",
+     "Put together an agenda.",
+     "Type up the meeting minutes and email them to everyone."
+    ],
+    "matches": [
+     [
+      "P0"
+     ],
+     [
+      "P1"
+     ],
+     [
+      "P1"
+     ],
+     [
+      "P3"
+     ],
+     []
+    ],
+    "stats": {
+     "windows": 4,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 6
+    }
+   },
+   "ES2010a": {
+    "gold": [
+     "The Industrial Designer will work on the internal working design.",
+     "The User Interface Designer will work on the technical function design.",
+     "The Marketing Expert will research user requirements."
+    ],
+    "pred": [
+     "The industrial designer will think about the working design before the next meeting.",
+     "The marketing person will do the user requirements specification.",
+     "The project manager will email more specific instructions to team members shortly.",
+     "Someone will handle the technical functions design, making sure the remote does everything needed."
+    ],
+    "matches": [
+     [
+      "P0"
+     ],
+     [
+      "P3"
+     ],
+     [
+      "P1"
+     ]
+    ],
+    "stats": {
+     "windows": 3,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 5
+    }
+   },
+   "ES2013a": {
+    "gold": [
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on the technical functions design.",
+     "The marketing expert will work on the user requirements specification"
+    ],
+    "pred": [
+     "Provide marketing research information on the trendiness of the remote."
+    ],
+    "matches": [
+     [],
+     [],
+     [
+      "P0"
+     ]
+    ],
+    "stats": {
+     "windows": 3,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 2
+    }
+   },
+   "IS1008a": {
+    "gold": [
+     "The Marketing Expert will prepare a sales plan for the product and discuss the project budget and the sales strategy.",
+     "The Industrial Designer will prepare an initial functional design.",
+     "The User Interface Designer will contribute studies on user requirements to the functional design.",
+     "The Project Manager will post his presentation to be available for all participants."
+    ],
+    "pred": [
+     "Marketing will provide a project plan to the project manager by the next meeting.",
+     "The industrial designer will provide a written plan covering functional design, technical design, staffing, timeline and initial budget.",
+     "The industrial designer will get back to the project manager on which people from marketing, technical or administration are needed to contribute to the plan.",
+     "The marketing person will work with Christian to produce a sales plan covering cost, pricing and how to compete in the market.",
+     "The usability person will work with the designer so the design does not conflict with what user studies show.",
+     "The team will copy the project manager on all discussions and documents so they can be submitted to management.",
+     "The team will start working out the functional design with the designer, keeping user acceptance in mind.",
+     "The presenter will send everyone a copy of the slides."
+    ],
+    "matches": [
+     [
+      "P3",
+      "P0"
+     ],
+     [
+      "P1",
+      "P6"
+     ],
+     [
+      "P4"
+     ],
+     [
+      "P7"
+     ]
+    ],
+    "stats": {
+     "windows": 4,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 8
+    }
+   },
+   "IS1009a": {
+    "gold": [
+     "The industrial designer will work on the working design and technical function.",
+     "The interface specialist will do the working design and functional design.",
+     "The marketing manager will look for user requirement specifications such as friendliness"
+    ],
+    "pred": [
+     "Each team member will do individual work on the functional design to discuss at the next meeting.",
+     "The team will hold the next meeting in 30 minutes.",
+     "The industrial designer will bring a working design to the next meeting.",
+     "The marketing manager will come up with user requirements specifications such as friendliness and price justification."
+    ],
+    "matches": [
+     [
+      "P2"
+     ],
+     [
+      "P0"
+     ],
+     [
+      "P3"
+     ]
+    ],
+    "stats": {
+     "windows": 3,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 4
+    }
+   }
+  }
+ },
+ "rule/human": {
+  "recall": 0.964,
+  "precision_lower_bound": 0.134,
+  "gold": 28,
+  "gold_hit": 27,
+  "pred": 149,
+  "pred_hit": 20,
+  "escalated": 0,
+  "windows": 0,
+  "dropped_invalid": 0,
+  "pipeline_usd": 0,
+  "judge_usd": 0.0538,
+  "usd_by_step": {
+   "judge": 0.05384
+  },
+  "calls_by_model": {
+   "claude-sonnet-5-5": 0
+  },
+  "per_meeting": {
+   "ES2002a": {
+    "gold": [
+     "The industrial designer will work on the working design of the remote.",
+     "The user interface designer will work on the technical functions of the remote.",
+     "The marketing executive will work on what requirements the remote has to fulfill"
+    ],
+    "pred": [
+     "Um and um this is just what we're gonna be doing over the next twenty five minutes Mm-hmm Um so first of all just to kind of make sure that we all know each other I'm <PERSON> and I'm the project manager Do Great you want to introduce yourself again Hi I'm <PERSON> and I'm supposed to be an industrial designer Okay And I'm <PERSON> and I'm uh our marketing Um expert I'm <PERSON> and I'm User Interface Great",
+     "Okay Um so we're designing a new remote control and um Oh I have to record who's here actually So that's <PERSON> and <PERSON> isn't it And you all arrived on time Um yeah so des uh design a new remote control Um as you can see it's supposed to be original trendy and user friendly Um so that's kind of our our brief",
+     "as it were Um and so there are three different stages to the design Um I'm not really sure what what you guys have already received um in your emails What did you get Um I just got the project announcement about Mm-hmm what the project is Designing Mm-hmm a remote control That's about it <PERSON>-hmm didn't Yeah get that's anything that's else Is that what it everybody Yeah Did got you get the same thing Okay Yeah Um So we're gonna have like individual work and then a meeting about it And repeat that process",
+     "and uh when planet of the apes becomes real I'm gonna be up there with them Right Cool There's too much gear You can take as long over this as you like because we haven't got an awful lot to discuss Ok oh we do we do Don't feel like you're in a rush anyway Okay I coulda told you a whole lot more about beagles Ach Boy let me tell why not you We might have to get you up again",
+     "then I don't know what mine is I'm gonna have to think on the spot now Impressionist Can't draw Is Um that a whale Yeah Um well anyway I don't know it's just the first animal I can think off the top of my head Um Yes Big reason is 'cause I'm allergic to most animals Allergic Ah to animal fur so um",
+     "fish was a natural choice Um yeah and I kind of like whales They come in and go eat everything in sight And they're quite Alright harmless and mild and interesting Mm Okay God I still don't know what I'm gonna write about Um Superb sketch by the way Tail's a bit big I think I was gonna choose a dog as well But I'll just draw a different kind of dog Yep",
+     "Right um where did you find this Just down here Yeah Okay Um what are we doing next Uh um Okay uh we now need to discuss the project finance Um so according to the brief um we're gonna be selling this remote control for twenty five Euro um and we're aiming to make",
+     "fifty million Euro Um so we're gonna be selling this on an international scale And uh we don't '<PERSON> want it to cost any more than uh twelve fifty Euros so fifty percent of the selling price Um can we just go over that again Sure Uh so bas at twel Alright yeah Okay So cost like production cost is All together twelve fifty but selling price",
+     "is is that wholesale or retail Like on the shelf Um I dunno I imagine That's a good Our question sale our sale anyway I imagine it probably is our Yeah sale okay actually because it's probably okay up to the the um the retailer to uh Okay sell it for whatever price they want <PERSON> Um Alright But I I don't know I mean do you think the fact that it's going to be sold internationally will have a bearing on how we design it at all Yes Think it will",
+     "Like how Just much money people have to spend on things Or just like like basic product podi positioning the twenty five Euro remote control might be a big hit in London might not be such a big hit in Greece who knows Aye I something see what like you that mean yeah yeah Marketing Good marketing Yep thoughts Oh gosh I should be writing all this down Um",
+     "here <PERSON> thinking 'kay trendy probably means something other than just basic Yeah something other than just standard Um so I'm wondering right away is selling twenty five Euros is that sort of the thi is this gonna to be like the premium product kinda Yeah thing yeah or Like how much does you know a remote control cost Uh-huh Well twenty five Euro I mean that's um that's about like eighteen pounds or something isn't it Mm-hmm Or no is it as much as that Sixteen Yep",
+     "one way of looking at it would be well the people producing television sets maybe they have to buy remote controls Or another way is maybe people who have T_V_ sets are really fed up with their remote control and they really want I a know better um one or something My But parents went out and bought um remote controls because um they got fed up of having four or five different remote controls for each things Right the house Right So um Okay for them so it was just how many devices control Right so in function one of the priorities might be Yeah to combine as many uses",
+     "Right so do you think that should be like a main design aim of our remote control d you know I think so do your Yeah your satellite and yeah your regular telly and Yeah your V_C_R_ and everything Well like um maybe what we could use is a sort of like a example of a successful other piece technology is palm palm pilots They're gone from being just like little sort of scribble boards to cameras M_P_ three players <PERSON>-hmm telephones everything agenda So like I wonder if we might add something new to the to the remote control",
+     "um you know the sound and everything it's just one system But each one's Hmm got its own little part Um okay uh I'd <PERSON> we're gonna have to wrap up pretty quickly in the next couple of minutes Um I'll just check we've nothing else Okay Um so anything else anybody wants to add about what they don't like about remote controls they've used what they would really like to be",
+     "that doesn't make it any better but that just the appeal It looks of better of not having You know these days there's a r pe things in people's homes are becoming more and more like chic you know Yeah Um nicer materials and Okay might be Okay be worth exploring anyway Uh Right well um so just to wrap up the next meeting's gonna be in thirty minutes So that's about um about ten to twelve by my watch Um so inbetween now and then um",
+     "as the industrial designer you're gonna be working on you know the actual working Yep design of it so y you know what you're doing there Um for user interface technical functions I guess that's you know like what we've been talking about what it'll actually do Um and uh marketing executive you'll be just thinking about what it actually what you know what requirements it has to has to fulfil and you'll all get instructions emailed to you I guess Okay",
+     "some kind of unique selling point of it Okay so um I you think know one factor would be production cost Okay yeah Because Yeah there's a cap there so um Okay depends on how much you can cram into that price <PERSON> Okay Um Yeah I think that that's the main factor Okay Okay Right okay we'll that's that's the end of the meeting then Alright Um So uh thank you all for coming Cool"
+    ],
+    "matches": [
+     [
+      "P15"
+     ],
+     [
+      "P15"
+     ],
+     [
+      "P15"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "ES2005a": {
+    "gold": [
+     "The Marketing Expert will examine the features and design of competitors' remotes.",
+     "The User Interface Designer will research possible shapes and colors for the device.",
+     "The Industrial Designer will research possible materials and the necessary internal components of the device."
+    ],
+    "pred": [
+     "Uh making Alright so a twenty profit five of fifty million <PERSON><PERSON> So it's So yeah go I've gonna have to be be pretty damn The only trendy the only remote controls I've used usually come with the television and Yeah they're Mm-hmm fairly Yeah basic So uh Yeah I was thinking that as well I think the the only ones that I've seen that you buy are the sort of one for all type things Yeah where the universal they're ones yeah Mm Yeah So presumably that might be an idea to But but put to into sell it Slim for twenty five you need a lot of neat features",
+     "Um and as you say we need to have some kind of gimmick so Okay um I thought maybe something like if you lose it and you can whistle you know those things The the keyrings Because we always yeah lose our remote yeah control Right Okay that's cool Uh yeah uh being as a Marketing Exper Expert I will like to say like before deciding the cost of this remote control or any other things we must see the market potential for this product like",
+     "what is the competition in the market What are the available prices of the other remote controls in the prices What speciality other remote controls are having Okay and how complicated it is to use these remote controls as compared to other remote controls available in the market So before deciding or before finalising this project we must discuss all these things Okay like and apart from this it should be having a good look also because people really <PERSON> uh like to play with it",
+     "buttons on it Mm-hmm Yeah or you could have a really small slim one but then you could lose it easily Then you lose Okay it yeah Kind of um maybe more like a P_D_A_ kind of just hand held like For 'cause for uh remember we're trying to make it for twelve Euros fifty Yeah No I wasn't no sorry I wasn't thinking of the screen of like Okay a P_D_A_ well but right we'll have to um I'll we're k having another meeting in half an hour so Okay um we should all look into a bit",
+     "uh oh actually no we'll allocate So you do the looking around at other remote controls Yeah Um if you could maybe come up with sort of shapes and suggested shades or whatever and you could look into um basically how how it's made I_E_ like how you make it all in one how what sort of materials are available to you whatever",
+     "Okay groovy And no doubt we'll get um Oh no Sorry Sorry it's okay We'll get um warnings for next meetings as well Okay cool Okay I shall I can't imagine these are worth much Okay Hmm"
+    ],
+    "matches": [
+     [
+      "P4"
+     ],
+     [
+      "P4"
+     ],
+     [
+      "P4"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "ES2006a": {
+    "gold": [
+     "The marketing expert will work on user requirements specification.",
+     "The interface specialist will look at the working design.",
+     "The industrial designer will work on the technical functions design.",
+     "They will get specific instructions when they get back to their workspace."
+    ],
+    "pred": [
+     "didn't receive Anyway it yet this is the the plan for today's meeting is um firstly just to introduce the project briefly um although I'm sure you've actually got some of the information already Then the main purpose is to so that we get to know each other a little bit more Mm-hmm Um then we want to practice using some of the tools that we'll be using during the the course of the design project and the meetings um specifically",
+     "the whiteboard over there Um then we need to go through the specifics of our project plan um and discuss come up with some preliminary ideas about it And then that's it So we've got twenty five minutes to do that that's until eleven twenty five S so any so sh any questions Is i Not at this point",
+     "not at this point So this is our project What we're aiming to do is to create a new remote control for a television Um we want it to be something original something trendy and also something user friendly so it has to be quite intuitive that people are able to use this product",
+     "The method that we're going to use to complete the project that has three components as such",
+     "There's the functional design of the the remote control We're going the way we'll do that I think is to to work individually initially and then come together for meetings to to work on that Um similarly with the conceptual design we'll start off by working individually with our own expertise on our own laptops and then we'll bring what we've done together",
+     "Um and then the detailed design will come after that We'll pull it all together I'm a bit confused about uh what's the difference between the functional design and conceptual design Uh i is it just uh more detail uh as I understand it I think it th w we're talking the the functional design is more your um area of things where you'll be we want to look at",
+     "the components of our product Um I think we'll we'll start that initially with the functional design Okay already but then yeah Okay so that's just a brief overview of the p the the project itself Um what I'd like us to do now is simultaneously introduce ourselves",
+     "what your role is and perhaps how your animal relates to the role that you're taking in this project Why are you looking at me Would you like to go first Do I have a choice Okay Ooh ooh Oh things falling everywhere yeah Right okay p put them in pockets Cool You Okay don't have to hurry we've got plenty of time",
+     "it's eyes like Okay cool Um this is a rabbit I thought it might be a cat Yeah well origi uh at first I thought it was going to be cat Yeah I don't think it's furry enough so we'll Yeah make now it a I fluffy now rabbit I understand now yeah Yeah I can see by the ears Yeah Okay right it's a fluffy rabbit blue Rabbits don't come in blue",
+     "but you know Um okay and I like it because it's small <PERSON> and it's fluffy And one day you'll be able to getical genetically modify them and they will come in pink Ah Okay Excellent Mm and what's your what's your role within the team I am the um I need my notebook <PERSON> ooh top banana Thank you Okay cool I am the Marketing Expert um so",
+     "like I'm gonna be doing the apparently according to the little guy in the computer that knows everything the user g requirements specification of the functional design um Mm-hmm trend watching in the conceptual design and product evad-valuation in the detailed design <PERSON>-hmm Okay um so yeah And more '<PERSON> about yourself you're from Um I'm from <PERSON> um second year Um",
+     "because I'm not so so very um familiar with all kinds of animals but I do like dogs Oh sorry maybe I should have shouldn't have said it beforehand but <PERSON> hmm Um well there are different kinds of dogs but okay um That's not bad at Ah all",
+     "it looks like a dog Yep Okay Is a bit more impressive than my rabbit I think it needs four legs if it's gonna walk though Yeah maybe it has some colourful patches yeah Um the other yeah legs and are on the other I side do like dogs because they are good friends to people and they are loyal <PERSON> well that's compared to some other animals like cats Um they're really much more fun because they are not so independent Um",
+     "so is there anything else you'd like to know Oh right my roles um so um in the different um stages of the design so at first I will be responsible for um for yeah designing the technical functions of the um um of the remote control uh then in the in the conceptual design stage I need to um come up with uh",
+     "interface concept and then in the last um stage I will be responsible for the int infa for the user interface design Okay Thank you that's it Okay um I'll do some I'll rub the features and let the drawing stay",
+     "'Kay um my name is <PERSON> my favourite animal one of my favourite animals is a cow I've got no idea how to draw a cow Good luck Uh this is going to be They're not just like a big round body and then some really skinny legs and then just Yeah some that'll horns do Okay so let let me draw the body first",
+     "So yeah I like cows Um my my role in the project is um uh the industrial designer so I'm supposed to design all the details of of the product um ho how it works and whatever it'll <PERSON> take during the functional role what are the various functions that have to be performed by it uh during the um conceptual design what are the various components of it",
+     "So let's see what's next in the PowerPoint presentation So If I've you just right thought click yeah on it I've you just can thought about this that we could even put it much more professionally <PERSON>-hmm as there we go Okay so this is the um overall budget for our project",
+     "We've got um we're planning to sell these remote controls for let's make that go away that means we've got five minutes Um we're planning to sell the remote controls for twenty five Euros each Um and with that we're aiming for a profit of fifty million Euros And that's selling them on the international market not just in the U_K_ Um so to do that our",
+     "could be um included in this remote control that that I think uh are out i of in the ordinary the beginning uh one thing was that was mentioned was that it should be mm trendy user friendly and original so um I think your point is relevant as far as the originality is concerned that we should provide some features that are quite unique Something to this something new Yeah I was looking <PERSON> at the website and the other things that they've made and I like put down some like inspirational",
+     "do on my remote controls so I figure how many do you need you know <PERSON>-hmm Mm Okay So perhaps some sort of menu-based thing or Something that's a little less crowded than this like <PERSON>-hmm I mean you know theoretically you can do all kinds of things with your T_V_ right Yeah But what do most people do They turn it on they watch Yeah certain specified channels Yeah you know and then they turn it off again There is a Sometimes lot of functionality they play a movie in there that is not used ninety percent of the time Yeah Yeah but so will be used ten percent of the time there's no So yeah need to have buttons",
+     "every now and then you need to replace the batteries Yeah Um Yeah but Hmm uh I mean e even though it has to be re original we shouldn't uh go like too far away from from the usual ones because otherwise Yeah the new users will just have a A lot big learning of problems curve with l yeah Mm-hmm learning yeah yeah Yeah So i it should kind of fit in as well and It's like the those fancy websites stereotype of a Hm-hmm yeah that",
+     "you can't access because you have no idea how to get in but the designers thought they were great Okay so we need to wrap it up now so that we can go away and get on with some of this Um we've got another meeting in thirty minutes so you're you'll be getting specific instructions once you go back to your workspace but im basically you're looking at the working design Alright you're looking",
+     "at the technical functions design and for you it's the user requirements specification <PERSON> like you said at the start Okay Okay Thanks for that Thank you Uh I'll see you in half an hour See you Carry the laptops back again <PERSON> Do we need to unplug things Probably"
+    ],
+    "matches": [
+     [
+      "P23"
+     ],
+     [
+      "P22"
+     ],
+     [
+      "P23"
+     ],
+     [
+      "P22"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "ES2008a": {
+    "gold": [
+     "The project manager will investigate whether the team is to create a remote that is to be sued solely with televisions.",
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on technical functions.",
+     "The project manager will type up the minutes of the current meeting and e-mail those to the team members.",
+     "The project manager will e-mail her slides to the team members"
+    ],
+    "pred": [
+     "Hmm Okay Good morning everybody Um I'm glad you could all come I'm really excited to start this team Um I'm just gonna have a little PowerPoint presentation for us for our kick-off meeting My name is <PERSON> I I'll be the Project Manager Um our agenda today is we are gonna do a little opening and then I'm gonna talk a little bit about the project then we'll move into acquaintance such as getting to know each other a little bit including a tool training exercise And then we'll move into the project plan do a little discussion and close",
+     "since we only have twenty five minutes First of all our project aim Um we are creating a new remote control which we have three goals about it needs to be original trendy and user-friendly I'm hoping that we can all work together to achieve all three of those Um so we're gonna divide us up into three compa three parts First the functional design which will be uh first we'll do individual work come into a meeting the conceptional design individual work and a meeting",
+     "and then the detailed design individual work and a meeting So that we'll each be doing our own ideas and then coming together and um collaborating Okay we're gonna get to know each other a little bit So um what we're gonna do is start off with um let's start off with <PERSON> sorry Alima Um we're gonna do a little tool training so we are gonna work with that whiteboard behind you Um introduce yourself um",
+     "say one thing about yourself and then draw your favourite animal and tell us about it Okay Um I don't know which one of these I have to bring with me Probably both Right so I'm supposed to draw my favourite animal I have no drawing skills whatsoever But uh let's see introduce myself My name is <PERSON> Um I'm from the state of Maine in the US I'm doing nationalism studies blah blah blah and I have",
+     "no artistic talents How do you spell your name A_ L_ I_ M_ A_ Thanks Oh and I guess I'm the Industrial Designer on this project So let's see if I can get um here I will draw a little turtle for you all Not necessarily 'cause it's my absolute favourite animal but just that I think they're drawable",
+     "they carry everything they need with them um and they're easy to draw Excellent Shall we just go around the table Uh Okay Well my name is <PERSON> uh and I'm the User Interface Designer for the project Um And I'll try and draw my favourite animal I'll I should leave that one on",
+     "there No shouldn't you I can erase before the I turtle it's alright callously rub it off Might be nice to have them all up there at same time Um I'm not gonna draw it quite to scale um",
+     "Is that at least identifiable Snake Well It's Em a whale Well snake It's yes Thanks Oh my god it's better than what I'm gonna w be able to do Um and yeah the reason I like whales is 'cause uh they're well first of all they're quite intelligent um and also they're they're kind of mysterious like we don't really know much about them or or understand how they work how they form groups And I",
+     "just find them interesting animals Take my contraptions with me Alright I'm <PERSON> I'm from around D_C_ ish sort of in the U_S_ And we're gonna keep the deep sea sort of theme going on animal Don't really know how to draw",
+     "they are like playful and silly sort of have a good time Not gonna try and pretend like I can get any better than that <PERSON> 'kay Mm 'kay I'm <PERSON> and I'm Project Manager from California Um Hmm",
+     "S It's definitely significantly Oh a cat harder once you are doing it Yeah Um it's actually a coyote Let's see Right Let's see That's impressive let's give it a little bit of a snout",
+     "gonna talk about project finances Um we have a couple we'd like to sell it for about twenty five Euro with the profit aim of um fifteen million Euro um from our sales and because this is such this is for television it's a we have a market range of Internet like it's an international market range we don't have to worry about specifics Um in order to make a profit of this magnitude we need to um be able to produce each one at a maximum of twelve fifty",
+     "etcetera so Um I hate when there's like four different buttons and you have to press to actually turn on the T_V_ like you have to do one for the power of the T_V_ and then like another one to get the actual screen on and something else to get it all going I don't know Now they keep combining all different remotes together and I don't know if I necessarily like that 'cause I feel like you end up with multimedia overload I just wanna watch the T_V_ Hmm um",
+     "Always gets lost Some sort of like device to help you find it I've used I've used remote controls for things like T_V_ and the C_D_ player and video recorder and I I guess they're they're pretty neat neat little tools uh You don't have to get up and walk across the room to change <PERSON> a channel So especially if you're someone really lazy like me they they're pretty",
+     "nice Um I find them they can be a bit annoying especially like you know if I'm watching T_V_ I have have to have three separate remote controls of in front of me you know one for the T_V_ one for the digital box one for m the video recorder as well Um And also they tend to they tend to be a bit confusing they've got too many buttons on them uh too too sort of too sort of complicated when all I really wanna do is switch on and off change the channel",
+     "change the volume Yeah um I agree with having too many remotes around My dad has a whole drawer at home of remotes for various things and I don't know how to work half of them um What's important for me I guess is that it's easy to use and that there's not too many buttons they are not too small you know you know you need to n to know what you're doing",
+     "And one thing I particularly like is if you are not um sort of moving it around to get it to work with the infra-red Yeah Yeah Um I think there is a way around that but I know in my residence right now the the television you sort of have to walk all around the room to Mm-hmm get it to turn on so i it's just simpler just to just turn around the T_V_ itself and I think that's if we're gonna make a remote control it should actually work for what it's doing So What about like batteries and things like that like are",
+     "um to uh combining all the remotes cont together versus having f five different remotes So um like you said you don't like having all the buttons on one on one remote and yet you don't wanna have five remotes So how <PERSON> do we work Yeah with that Could we get something that just has No doesn't have all the buttons that you need to program the video recorder or program s other things that I'm not very coherent",
+     "about but that just has your major buttons for that work for everything you know volume control Mm-hmm on off channel changing And maybe that spatially divides it so it's like if you're looki if you're trying to get the T_V_ on that's you know like the top thing on the remote I dunno if d be vertical or horizontal in terms Yeah of how we're gonna make it but if it's like all the T_V_ stuff was here then all the V_C_R_ stuff was here all the whatever else we <PERSON> have programmed N that way into it it's all just in its Yeah separate place and not like all the on buttons together 'cause",
+     "then you like I don't even know what I'm turning on Mm Yeah and if um if you'd save the more complicated functions maybe for separate remotes that you wouldn't need to use every day Mm-hmm Okay so Um maybe have like one remote that has the main functions on off channel changing volume and another rote remote with all the special things Because Yeah that is one thing that um remotes tend to have buttons that the T_V_s no longer have as well <PERSON> So Yeah like you have to have them somewhere 'cause you're gonna m need those special functions occasionally Right Um but",
+     "not necessarily on the m the normal remote Can I ask are we designing a remote control for a television only um Good question and if if this device is just to be used for the television would we even technically be possible to include video recorder functions on it I don't know Um that yet or should we just stick to just stick to having television television related buttons on <PERSON> it",
+     "It's a good question <PERSON> I'll look into hmm that If I can I think it's just T_V_ I mean if it if we're taking it just new product a new television remote control that's not like doesn't say <PERSON> yeah You know things might be more advanced than that <PERSON> So we should maybe we should assume that i t it's just a television that we're wanting to control Well I",
+     "mean I suppose it would be nice to have playing and record and stop buttons on it for the video recorder as well I I don't know if that works technologically or not Yes I guess we have to define what what we're aiming for If it's just a television then that it's a bit simpler 'cause there's less buttons that would even need to be on it Yeah It's an idea with the buttons being really Large Yeah If you have older people or people like me that aren't very co-ordinated hand-eye it's really quite important",
+     "that you are <PERSON> not pressing a small like teeny mobiles phone size buttons Yeah if we can help it Okay '<PERSON> sounds like we've had a good little discussion for our first ideas Mind if we move on Ps '<PERSON> mm okay Um now our next meeting starts in thirty minutes I believe we've actually been only working on this this one for about twenty so we can <PERSON> continue discussing more new ideas if you'd like um but",
+     "this is just a breakdown of what we'll be doing individually Um the industrial design Alima will Yeah be doing um the working design Um the User Interface Designer that's for Technical functions I guess like keeping in mind the buttons thing the size of the buttons Um user requirements um so you'll be hearing about different trends uh about different things that people need um I guess kind of the same uh discussion that we've been having we'll <PERSON>-hmm get from the actual consum",
+     "s consumers <PERSON> 'kay um And you will get specific instructions sent by your personal coach I realised in this past one we we didn't have much we just wanted to get a little brain-storming done Um so very exited to see all your animals and how what wonderful um artists we all are um Any questions",
+     "What we're gonna be discussing at the next meeting Do we know that I haven't gotten an agenda yet um I'll put that together I'm sure Right as we'll each get our own instruction and then um because what we gonna do is first our individual actions and then we'll come back together Yep So I'm '<PERSON> sure we'll all have more concrete",
+     "things to contribute next time Yep I'm sure we'll be busy <PERSON> 'kay um I'll type up mi minutes and probably email those out to all of you Okay Um just including all the things that we talked about Can Um you e-mail your slides as well Is that possible Yes I yes I think I can Mm-hmm Cool I'll just attach it to an email And you're you're number two I'm two three four I'm four Is that correct Okay"
+    ],
+    "matches": [
+     [
+      "P21"
+     ],
+     [
+      "P24"
+     ],
+     [
+      "P24"
+     ],
+     [
+      "P27"
+     ],
+     [
+      "P27"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "ES2010a": {
+    "gold": [
+     "The Industrial Designer will work on the internal working design.",
+     "The User Interface Designer will work on the technical function design.",
+     "The Marketing Expert will research user requirements."
+    ],
+    "pred": [
+     "Okay Hi everybody and welcome to our kick-off meeting um for our new product that we're gonna be designing Um I'm <PERSON> and I'm the Project Manager And I know all",
+     "your names again <PERSON> and Amber Yep Alright Okay so first let's go through this PowerPoint I wonder what button I press Just do it on the arrow Yeah or how about I just click Okay here is our agenda for this meeting Um we're gonna start with our opening which was our introductions We're gonna get to know each other a little bit better Um tool training we're going to",
+     "I guess figure out what to do on this project with our individual roles Um we're gonna make a project plan and then have some time for discussion and close up the meeting Okay here is our project We're gonna make a new remote control that's um original trendy and also user-friendly And how we are going to do it is each of us is going to um",
+     "We're gonna have discuss the functional design first how is it gonna be used what's the actual goal here it has to operate T_V_ blah blah blah And we're going to do individual work on that and then meet Same thing with conceptual design Just the basic overview of the project and then we're going to do individual work meet That's pretty much the the whole process for today And then the detailed design just more in-depth get the actual schematics of the remote",
+     "Okay Alright First we're gonna start off by using our tools And the whiteboard thing do you guys wanna give that a try even though the ink wasn't working or do you wanna do it on here I think we should forgo the whiteboard since we We can't could actually see what we're writing Yeah we could on here Alright let's go forward then Um right now so we're all gonna draw our favourite animal and then sum up our favourite characteristics of that animal Even if you are not a good drawer like me",
+     "Okay Okay And who would like to start us off I'll go Alright Um this is my picture I drew fish I like fish because uh you know their whole water-vascular system thing It's pretty cool and um they've got a pretty good habitat and they are pretty sometimes sometimes vicious but that's okay Yeah Only if they're piranhas Yeah they they're easy",
+     "you know Yeah Alright Who wants to go next I'll go I drew a kitty It's pretty much impossible to tell that's a cat but No I No I I I kne see love I it No knew cats it looks like a cat Yeah it does look like a cat I love cats because they're independent uh they pretty much know what they want they get it they move on I love cats too Yeah I'm a cat person I'm allergic to cats Ah Uh I'm allergic to cats too Oh okay",
+     "They're just such odd creatures you know I I like that they're so unique and individual I guess I don't know much about their behaviour or anything though Only seen a couple You in don't zoos really have to I Yeah mean but you can if you appreciate like 'em the way they look Okay Alright Guess we're getting straight back into business here Um the selling price for our remote is going to be twenty-five Euro and our profit aim is fifty million Euro We're going to make this",
+     "an international product marketed in the States in Europe in Asia And um our production cost to make that profit is gonna be a max of twelve fifty Euro per remote Okay So we're gonna talk for a little while Um here are some topics that we might be able to discuss <PERSON> our experiences with remote controls um our first ideas about",
+     "But it's still there so Okay if po if we're gonna do it It needs to be compatible 'cause universal remote controls are never universal They're never universal That's right Esp e especially if you buy a a not big product D_V_D_ player say usually it doesn't work Or if if it's it's not not like a one Sony of the if it's like Yeah a I Yeah don't know Something So from we'll have <PERSON>'s to figure club it how to cover all the different variances in signals Yeah And what we need an insanely good instruction booklet because you always have to reconfigure all your",
+     "Yeah I guess then it's If we need to do triple A_ we can but most people usually have double A_s around Okay Yeah But that has to do with the size of it too Right Yeah Well w as long as we know that issue is Yeah if we Here want it we to can be more thin then we'd probably wanna go with a triple Triple A_ A Can But you with a small lithium battery it's okay we don't have to decide about it now just as long as we remember battery type and size is important Hey Anything else",
+     "Alright Moving along Oh we're closing the meeting Next meeting is gonna start in thirty minutes Here's what we're going to do Um the I_D_ which is who Okay you're going to think about the working design What do you think that means Okay And U_I_D_",
+     "Mm-hmm the technical fun functions design making sure it does everything that we need the remote to do the functionality of it operating all those different things Okay And the marketing person that's <PERSON> is going to do the user requirements specification I guess that means specifying um what exactly the user is going to be looking for Right Right I would think so Okay And you're gonna get more specific"
+    ],
+    "matches": [
+     [
+      "P11"
+     ],
+     [
+      "P12"
+     ],
+     [
+      "P12"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "ES2013a": {
+    "gold": [
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on the technical functions design.",
+     "The marketing expert will work on the user requirements specification"
+    ],
+    "pred": [
+     "As you can see our agenda is to open up the meeting um become acquainted with each other um have a little training on tools uh create a plan discuss things and and we only have twenty minut twenty five minutes total Okay The new remote control is to be original trendy and user-friendly That <PERSON> is your part is the user-friendliness The originality",
+     "um is gonna take all of us Um the trendiness we'll probably go look at for some marketing research information from you <PERSON> Um and we'll get on with it Okay so we'll have a functional design individual work um with meeting and then conceptual design t and then detailed design Okay Right",
+     "Everybody's supposed to try out the whiteboard <PERSON> why don't you try it first if you can either Uh yeah if bring I can your things with pick up with you I all guess these bits and pieces hang on And while you're doing that we'll try and figure out how to hook these things on as well 'cause we're all gonna have to be able to walk around Uh right so you want an animal",
+     "and the characteristics of that animal Do you have to be able to recognise what animal it is Uh I do not think so I think it's just to try out the whiteboard Um Are we all gonna draw a cat I know Only animal I could thin I could draw Ah",
+     "Its a sort of bunny rabbit cat You can tell it's not a bunny rabbit by the ears Uh-huh Um I suppose it should have a mouth as well sort of Okay Right yeah Great And the characteristics Um the favourite characteristics of the cat um the whiskers I think um because they're the easiest to draw Uh-huh In fact I'll give it some more Oh Okay and the tail",
+     "Okay Now um we have to get down to the nitty-gritty of how to make this and this remote control has to be sold um we're to sell it for twenty five Euros with a profit aim ultimately of fifty million Euros That tells you something about how many um we have",
+     "to sell on an international scale Um would be an awful lot of these would be like what a hundred million of them um to make twenty five Euros on each one and to make a total profit of fifty million Um the production is to only cost twelve and a half Euros per item Now if they cost twelve and a half you're selling it for twenty five you're making twelve and a half Euros",
+     "do we have to sell Yes 'cause our market um is international and your problem is has to do with marketing of you know you gotta know how many we're going At twenty to be selling five to know how big a market you have to target <PERSON> and who is that Yeah that's um To give you a pretty good idea of where you're looking So that's four million of them Something like that Okay Yeah That's",
+     "fifty million Euros In order And if to make we make fifty million Euros and you're only getting twelve and a half each Mm-hmm That's a lot of selling Yeah Two four Four million To be fifty be four million You'd have to sell four million Hmm Okay Right",
+     "We have to think about that one We could make a Hello Kitty themed remote I think one in b bright colours would be good Yeah We I could think totally one that works go for would the be good Japan-a-mation Well I mean there's also the cachet that um uh the Japanese make great products Electrical their industrial design is very good I think one that doesn't have lots of superfluous functions",
+     "know you can go in and say mute or or volume We don't need to have like the l the numbers if we also have uh <PERSON> uh channel up channel down <PERSON> Okay We can make it smart like an iPod you know make everything menus Ooh closing the meeting Yeah Um That was quick I know this sounds like it",
+     "was very quick but the I think that's the industrial design Mm is the first one that's <PERSON> for the working design And user that's you <PERSON> for the technical functions design and for marketing the user requirements specification I think there's going to be a lot of we have to help each other and work through this as a group and I think we all you know",
+     "we like our kitty-cat and our rat and our fish but I think we all have to like each other um to get this done Uh as it says we're gonna get individual instructions but uh I don't think they allowed a lot of extra time so I think a little bit of less of this and more at do will set us in good stead Do you all agree <PERSON>-hmm Mm-hmm Alright Um then I don't see any reason to prolong it",
+     "and f we should finish this meeting at ni right now and go into other things Alright so this is the end of the first meeting Okay 'Kay Thank you all"
+    ],
+    "matches": [
+     [
+      "P11"
+     ],
+     [
+      "P11"
+     ],
+     [
+      "P11"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "IS1008a": {
+    "gold": [
+     "The Marketing Expert will prepare a sales plan for the product and discuss the project budget and the sales strategy.",
+     "The Industrial Designer will prepare an initial functional design.",
+     "The User Interface Designer will contribute studies on user requirements to the functional design.",
+     "The Project Manager will post his presentation to be available for all participants."
+    ],
+    "pred": [
+     "new project which we are going to discuss now So I want to introduce first of all uh the names and the colleagues here And what you're uh drawing Uh sure my name is Agnes and I'm an user usability user interface designer My name is <PERSON> and I do accounting Uh how you spell your name uh E_D_",
+     "E_D_ okay <PERSON> And Do you also do marketing No So only accounting Accounting Okay yes And And I'm <PERSON> and my role in this uh scenario is to be the industrial designer Industrial designer But I'm not really one So who is uh marketing nobody Marketing in the market is uh is me It's you okay",
+     "So thanks for coming for the meeting first of all and uh we have a long time just twenty-five minutes to discuss about uh this project and the the project initiation First of all I want to ask uh Mister <PERSON> about your uh marketing plan and your product plan and uh Well I think that we'll see that throughout the day in how we're going to put this together as a marketing to",
+     "to market the product We'll have to see on a through discussion on where we're gonna go from here and from with this <PERSON>-hmm but uh do you already have like a functional design or a technical design Uh or for the moment not yet Oh for the moment not yet okay but uh what's what's your uh do you have some project plan something with you or Good question No this is like I said that we have to be discussed between all of us and we'll go from there We'll have to Mm-hmm simply we'll have to work on it together",
+     "Okay so uh by when you think you can uh give me some kind of uh project plan okay a discussion with Certainly uh by the next meeting By next meeting okay that will be great Uh Okay so there's any questions or uh first of all about uh this project What is the goal of the project Uh",
+     "the goal of the project I think maybe I'll uh hand out to the <PERSON> okay so to explain uh what is the project because he's in the sales and the accounting I'm in the sales I'm supposed to explain them what to do We have to define exactly what our product is from uh Yes so can you explain uh what exactly the product is From what I had in mind we're supposed to be marketing coffee is that right Oh I think Um I uh was wondering if I'm not wrong",
+     "we're making the remote control Remote controls 'cause I had two different things I had a first part of mine was to make a remote control for a new f remote control for television and afterward I had a discussion about coffee so Yes we'll start with the remote control for television then So we're have to design something that is very user friendly Mm-hmm Mm-hmm Something uh visual that has something that will will draw people to buy the product <PERSON>-hmm because",
+     "I think everybody's experienced with uh remote controls and some remote controls are are worth uh throwing out the window Uh th most of them ar I don't know we're have to come up with a new idea on how to make it a lot easier to use <PERSON>-hmm 'cause a lot of times uh spend uh half a day through the instruction book trying to figure out how to use it <PERSON>-hmm Mm And uh what abo uh <PERSON> what about your uh the industrial design plan",
+     "some sort of a seven inch um monitor and um I understood that that was the project goal So um I'm glad I didn't d do any work um ahead of time because uh I clearly didn't understand the project goal Okay Um I just did s see that we were starting a new project together and there was going to be a four member team composed of these people and um that's about uh that's Mm-hmm and I I read through the",
+     "different steps and what my responsibilities were relative to the steps So uh you'll be leading the team for your design team or how many members is working in the team for the design Uh for the industrial design Yes Um well I would th think that depends on how much money you give us Okay That's Um because uh you know you can uh you can make it uh you have different choices with different financial models Yeah but uh before we talk about uh the finance okay uh do you",
+     "have some idea how we can uh sell this product or project in the market and how much is going to benefit to the company and uh of course it's to the individual also Well you know um I kind of think that in general you have to do uh um y you have to have something that's very fashionable that's uh very attractive that um people see and recognize uh its goal and uh",
+     "they immediately wanna have it uh have one of their own So it would really would need to um something like the iPod would be good seems to have caught on fairly well so Mm-hmm um d uh you know I don't care what it does just so it looks cool Okay but uh uh when you think you can give me like a kind of design on the functional design or the technical design Well uh I've got a lot of other projects I'm doing",
+     "right now um and so I'll have to wait and see how those uh how those go If they uh go quickly then uh it could be a month If um if I run into any problems in my other projects it might be six months Yeah but uh I need something in the writing so like uh what's your functional design what's your technical design and uh how many people you need for this project <PERSON>-hmm and what's the time frame you're looking okay <PERSON>-hmm and what is the budget maybe uh initial budget you're looking okay and",
+     "uh how is going to the market okay so you've you've had to meet with the marketing team and how they're going to market and what are the marketing strategic plan okay when are you going to introduce okay and by the time you introduce the product and uh you know there there would be a competition okay so I need some kind of uh uh the plan in the writing from you Okay and And it's po when would you like that B as soon as possible Uh well if uh if",
+     "we have enough time uh then d do you think um two weeks is a is close enough Yes I think uh that would be good because I need to go to the management and uh tell them what we are going to do and uh what cost is okay and what's the time frame and what's the project plan because uh without any uh documentations I cannot go to the management and say so we are going to do this and we need this much money okay so then it's it's difficult for me to say okay that's the reason I need uh some kind of plan from you",
+     "initially okay then we can have the further discussion again Uh are there other people who will be contributing to the plan Yes of course if you need some help uh so let me know So who are the people you need uh from the marketing or uh the technical side or uh the administration point of view okay to add in any documentation or some technical point of view so just let me know so I can uh coordinate all the teams Okay I'll get back to you on that Yes Thank you Okay And uh <PERSON> uh",
+     "so what's what do you think about uh this uh project for the remote control and d do you have some already planned something for your marketing strategy or uh the sales strategy Well not yet other than uh doing research and taking remote controls and looking what other companies have to do <PERSON> uh what they're building their designs their ideas uh also have to pinpoint which market we're gonna go into Mm-hmm It should be a fairly large market because uh the number of people that uh the competition",
+     "Mm-hmm uh th I agree it has to be something it has to be something new it has to be something that that draws people saying eh I like this Whether it works or not they have to first say I like this I like the design and then it's gotta be simple to use Yes so what I uh prefer maybe uh you need to interact uh more with the <PERSON> okay because you know what she is going to do it okay and you know how to sell it Okay because uh she is doing the",
+     "design but Yeah you are the core because you are in the marketing okay so because you need to sell and you're the responsible for the all the money the finance okay Mm-hmm tomorrow So what I prefer okay so you need to interact with the <PERSON> more and uh within her team okay who is using the functional design or technical design <PERSON>-hmm okay and uh you need to come up with some kind of plan okay how we are going to do the your sales plan okay Do we th already have a cost limit on this th an idea of how much uh we Th want to",
+     "market this for That how much it's that's gonna sell for that's up that's up to us to decide Yes that's eh you have to decide okay so the best thing is you uh both of uh the <PERSON> and you discuss with yourself okay and come up with the cost and how we are going to compete in the market okay in the the technically or in the sales wise okay the commercial wise okay Then uh we have to design okay how long it will take the whole project okay how much is going to cost us and how much we are going to benefit for the company",
+     "Okay of course it's it's uh of benefit for everybody individually Okay so I think it's uh maybe if we can uh give me some kind of your uh the sales plan okay including the technical what uh she's going to talk to you within the team okay then it will help me to discuss with the management for further okay and put it in the the proper project plan Okay Very good and if you need uh any coordination in between uh compared to the maybe the",
+     "some technical vendors or commercial vendors okay depends if you want to have some uh uh marketing plan or technical plan okay so you let me know Okay I can Very coordinate good or maybe uh you are my coordinator am I right Mm Between uh all Well the coor no not exactly I mean my job from what I understood was to look at the usability requirements and make sure that the product is usable it's acceptable to the people who are gonna use it and look at the best",
+     "ways to do that Yeah So I think I'll have to interact with <PERSON> and discuss with her yeah so that she's not designing something that my Which is studies will show right off the bat that it's not going to work and so it's sort of it's a loop that feeds in but I don't think necessarily that I'm Yes in a coordinating position Yeah for so it basically you need to interact with <PERSON> more okay for the user acceptability Yeah okay and the testing okay <PERSON>-hmm",
+     "then you Which will will also feed into the marketing Yes because depending on what users want depends on how you sell it Yes what tag lines you attach Yeah to it how you try Yeah to make it more attractive Yeah to users So I think all three groups will need to interact quite a bit Um and then I guess build the plan based on all of that because I think you need to take all the factors into account Yep But what I request okay keep <PERSON> in the loop okay Yeah of in course between your",
+     "uh meeting and <PERSON> meeting because uh he should know what's happening Yeah we can C_C_ Yes him on any Okay discussions and or please documents please that copy are passed all around the mails okay all the discussions to me okay Sure so I need to submit to the management No problem So any questions for uh time being No So the immediate next step is to start determining the functional design Yes or",
+     "okay Okay To come up with the functional design and uh to discuss with <PERSON> okay and how it's going to be work and uh first of all with your user acceptance Mm-hmm okay how it looks like and how it's going to be work in the market okay so then we can discuss about uh further things Okay So we'll meet when the we'll discuss on the further meeting It's okay <PERSON>-hmm Thanks for coming Would you mind um at the conclusion of our meeting could",
+     "could you send us a copy of your slides Yes Mm-hmm I yeah will that would be useful Yes I'll copy uh le let us keep all the emails and all the copies okay share each other okay so you know everybody what's happening Sure okay And if anything you need anytime so please either you can call me or just send me email or uh just come and uh knock my door okay so I'm available here It's good Okay Okay Thank you thanks Thanks for coming and uh"
+    ],
+    "matches": [
+     [
+      "P4",
+      "P18",
+      "P20"
+     ],
+     [
+      "P11",
+      "P12",
+      "P24",
+      "P25"
+     ],
+     [
+      "P22",
+      "P25"
+     ],
+     [
+      "P26"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   },
+   "IS1009a": {
+    "gold": [
+     "The industrial designer will work on the working design and technical function.",
+     "The interface specialist will do the working design and functional design.",
+     "The marketing manager will look for user requirement specifications such as friendliness"
+    ],
+    "pred": [
+     "ourselves Yeah that's a good and plan everybody's name and what your function is So maybe we start Okay with you Yeah my name is <PERSON> And I'm uh an user interface my role is uh the main responsibility is user interface <PERSON>hmm And my role is to design uh a television remote control Mm-hmm Okay And I'm a marketing person I wanna figure out how to sell them Mm-hmm And your name is My name is <PERSON>",
+     "Yes y opening acquaintance tool training well the tools are I think we already I guess the tool is really our the computer <PERSON>-hmm as far as I can see Uh we get ins each of us will get instructions and we'll take it from there Project plan that falls under the same heading pretty much Um I don't think we have any great discussion at this point No Um Here is what",
+     "this thing should be This thing we are gonna um uh design is a new remote control Uh should be original <PERSON>-hmm trendy and of course user friendly So maybe you wanna make some notes of that",
+     "Okay Okay Mm-hmm All right Here is what the functional design is supposed to achieve Um That is it's gonna be individual work and then at the meeting we'll discuss what uh",
+     "we have come up with The same goes for the conceptual design there will be individual work whic and then discussion afterwards Detailed design <PERSON> '<PERSON> so same thing basically Three different types of design that we're gonna be concerned with <PERSON>-hmm okay <PERSON>-hmm Functional conception",
+     "and detailed I can't write with this thing Maybe we should redesign it Yes After we've finished the remote control we'll get to that Yeah okay All right Then tool training try out the white board participant can draw their favourite animal Does anybody want to go and see how the white board works So that in case we have",
+     "to in the next meeting present something on the white board You wanna go <PERSON> and Okay I'll see what I can do Whether you See if without I r hanging yourself See if I remember how to draw a kitty cat or a rabbit or something And remember you have to press so it works So that it will record Mm-hmm okay Um uh um traditional kitty cat",
+     "or No no No that's okay No Okay okay I don't know we'll get to that later Okay What should I draw Snake I'm going to draw a snake How does it look like Uh okay Okay Okay I",
+     "hope the kitty cat is hungry 'cause I don't like snakes Here's the project finance uh which of course we all have to think about when we design this thing Um selling price is supposed to be twenty five Euro Uh Mm-hmm profit aim for the company is fifty million Euro the market range unlimited meaning international Okay and the production cost should not exceed",
+     "hopefully should be less than twelve fifty Euro Mm 'kay that should keep everybody on their toes and challenged Mm-hmm Profit Um So is these fifty are all things of course <PERSON> to remember with the budget and when you design to materials cost etcetera Now uh",
+     "Would you like it to be smaller Uh bigger Yeah have I more have more buttons on it or maybe clearly better marked buttons you know things Yeah like that Yeah Yes I I feel that all the remote should be very compact Small right Yeah those Mm-hmm which we get here nowadays it's very long Mm-hmm And um and it should have multi-purpose Like uh the remote control which we use for T_V_ it <PERSON> uh it should be used f uh for some other purpose also like controlling",
+     "the Mm-hmm uh Audio temperature player inside Oh the house or Okay for air-conditioners or for heating system So it should be a multi-functional Yes uh exactly gadget that Yes would Hmm um control all your household uh Yes uh Divides machines us basically Yeah Yeah Exactly Yeah At um twelve fifty Euros per Well Well who knows if we get a really good designer maybe we Yeah can do that We certainly can try to I agree",
+     "with her that to market something successfully it should do some more things It should be something new it should be s it it should do something different than than just what That's we have right Yeah Now Yeah of of course course the other thing to think there is maybe the design Yeah design should be yeah it should be different All the almost all Like the trendy no like remotes f for earlier we saw maybe it should be something trendy you know Yeah Yes maybe exactly Maybe ten it should I different colours do yeah colours or materials Are and different al shapes shapes also or Yes you Yeah know Um so yeah shapes right you know like kidney shape feels Yes better in your hand or something Yeah of you Yeah know course okay yeah friendly shape Yeah",
+     "that it gives out a a sound Yeah some or a signal beep Uh so or something Or a Yeah b like that so Mm-hmm so it's that really we can the go So beep if or lost or a light should blink If lost Should Yeah ha uh A signal fluorescent with signal b yeah throw Mm signal 'kay you know Yeah maybe it should have a light so that we can we can just recognise where it is Exactly Yeah yeah I mean just May not that's be what beep I'm saying I'm just saying throw signal meaning just whether it's a beep <PERSON> or whether or uh it's a a light light or maybe And do it's you think a light a good c c um clue for that is that it would respond to a clap or it would respond",
+     "to your voice or it would respond what what should you have to do to make it beep or blink Okay my my idea is maybe that the minute it's really hidden in in other words if it's like in a dark spot <PERSON>-hmm uh meaning you know like a newspaper is on top a sweater is on top or Mm-hmm it it's behind a plant at that moment it's it's like it's like um what you call it a light s sensors you know Okay In so in that moment it has a sensor i Yes it it Okay gets a certain darkness",
+     "it ge has a sensor and it gives out a signal whether that be a light signal or Yeah a beep probably I mean that we can yeah discuss probably that it's later a yeah you know yeah Yeah And uh So the light sensor would activate the signal That's right Mm-hmm You know there would be right you have to have some kind of sensor and I I think uh voice or clapping it's not specific enough Uh I know there are the lamps and stuff you know you <PERSON>-hmm can clap on and Yes off but I think they only work to certain degree and But it could be someplace really obvious and",
+     "you still wouldn't be able to find it Yeah What of course with that didn't Well Then because in that you're s case because I i you're we silly can't do Because it people are silly Oh yeah well but then I mean those it could people be on we can't help everybody well i if it were like on top of your bookcase and you usually kept it on the coffee table um you know Okay well we have maybe we uh have to move along yeah okay we have to move along but I think we have some good Yeah good points good point to start with here Okay the next meeting will be in thirty minutes I think you all did you get",
+     "So you Okay have a working design and then a functional design And the marketing manager is coming up with some user requirement specification like friendliness and what we just discussed in general That would be your idea And of course price That it that it that the price is a good price Mm-hmm I mean the price is given but that was We have to justify that That's price right by having sufficient features to make it sell at that price That's right",
+     "And you know specifi you you will get specific um instructions for that I think that's the end of the show Yeah So um we have well we have a twen two two two three minutes Um any questions at this point Or uh suggestions <PERSON> I think basically basically you will get instructions",
+     "to work with and Okay if you have any questions Yeah uh uh I guess you can uh Okay I think I have enough to think about 'til our next meeting Mm-hmm Yeah even How about I have you people Yeah Yes Really even I have <PERSON>-hmm I Okay think yeah 'Kay Okay Alright Yeah well so let's uh see Then uh we see you in about thirty minutes Yes And see what we can come up with Hmm Okay Okay very good Okay Yes Yeah"
+    ],
+    "matches": [
+     [],
+     [
+      "P17"
+     ],
+     [
+      "P17"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0
+    }
+   }
+  }
+ },
+ "haiku/human": {
+  "recall": 0.786,
+  "precision_lower_bound": 0.54,
+  "gold": 28,
+  "gold_hit": 22,
+  "pred": 50,
+  "pred_hit": 27,
+  "escalated": 0,
+  "windows": 0,
+  "dropped_invalid": 0,
+  "pipeline_usd": 0.0131,
+  "judge_usd": 0.0197,
+  "usd_by_step": {
+   "extract": 0.01313,
+   "judge": 0.01968
+  },
+  "calls_by_model": {
+   "claude-haiku-5-5": 27,
+   "claude-sonnet-5-5": 0
+  },
+  "per_meeting": {
+   "ES2002a": {
+    "gold": [
+     "The industrial designer will work on the working design of the remote.",
+     "The user interface designer will work on the technical functions of the remote.",
+     "The marketing executive will work on what requirements the remote has to fulfill"
+    ],
+    "pred": [
+     "The project manager will record who is attending the meeting.",
+     "The industrial designer will work on the actual working design of the remote control.",
+     "Everyone will receive instructions by email.",
+     "The next meeting will be held in thirty minutes."
+    ],
+    "matches": [
+     [
+      "P1"
+     ],
+     [],
+     []
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 4
+    }
+   },
+   "ES2005a": {
+    "gold": [
+     "The Marketing Expert will examine the features and design of competitors' remotes.",
+     "The User Interface Designer will research possible shapes and colors for the device.",
+     "The Industrial Designer will research possible materials and the necessary internal components of the device."
+    ],
+    "pred": [
+     "Look into shapes, suggested colours and shades for the remote control.",
+     "Research how the remote control is made, including materials available and how to build it as one unit.",
+     "Look at other remote controls on the market to see competition and design.",
+     "Research the competition, including prices, speciality features and ease of use of other remote controls."
+    ],
+    "matches": [
+     [
+      "P3",
+      "P2"
+     ],
+     [
+      "P0"
+     ],
+     [
+      "P1"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 4
+    }
+   },
+   "ES2006a": {
+    "gold": [
+     "The marketing expert will work on user requirements specification.",
+     "The interface specialist will look at the working design.",
+     "The industrial designer will work on the technical functions design.",
+     "They will get specific instructions when they get back to their workspace."
+    ],
+    "pred": [
+     "Each person will go up to the whiteboard, draw their favourite animal, and tell everyone its favourite characteristics and their name.",
+     "The marketing expert will do the trend watching in the conceptual design and the product evaluation in the detailed design.",
+     "Designs the technical functions of the remote control during the functional design stage.",
+     "Comes up with the interface concept during the conceptual design stage.",
+     "Is responsible for the user interface design in the last design stage.",
+     "Designs all the details of the product, including how it works and its components.",
+     "Keeps the team on track and makes sure everyone works together productively so a great product is produced.",
+     "Everyone will think about specific unique features for the remote control after the meeting.",
+     "The team has another meeting in thirty minutes.",
+     "Team members will receive specific instructions once they return to their workspace.",
+     "Each member goes back to working on their assigned design area, the working design, technical functions design, or user requirements specification."
+    ],
+    "matches": [
+     [
+      "P10"
+     ],
+     [
+      "P10",
+      "P3",
+      "P4"
+     ],
+     [
+      "P2",
+      "P10"
+     ],
+     [
+      "P9"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 11
+    }
+   },
+   "ES2008a": {
+    "gold": [
+     "The project manager will investigate whether the team is to create a remote that is to be sued solely with televisions.",
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on technical functions.",
+     "The project manager will type up the minutes of the current meeting and e-mail those to the team members.",
+     "The project manager will e-mail her slides to the team members"
+    ],
+    "pred": [
+     "Each team member will do individual work on the functional design before coming together in a meeting.",
+     "Alima will do the industrial design.",
+     "The User Interface Designer handles technical functions, including keeping button size in mind.",
+     "The team's next meeting starts in thirty minutes.",
+     "The speaker will look into whether video recorder functions can be included on the remote.",
+     "Type up the meeting minutes and email them to all attendees.",
+     "Put together the meeting agenda.",
+     "Email the slides to the group.",
+     "Each member will receive specific individual instructions from their personal coach before the next meeting, and individual actions will be done before the group reconvenes."
+    ],
+    "matches": [
+     [
+      "P4"
+     ],
+     [
+      "P1"
+     ],
+     [
+      "P2"
+     ],
+     [
+      "P5"
+     ],
+     [
+      "P7"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 9
+    }
+   },
+   "ES2010a": {
+    "gold": [
+     "The Industrial Designer will work on the internal working design.",
+     "The User Interface Designer will work on the technical function design.",
+     "The Marketing Expert will research user requirements."
+    ],
+    "pred": [
+     "Each team member will do individual work on the functional design before the group meets again.",
+     "Think about the working design of the remote before the next meeting.",
+     "The marketing person will do the user requirements specification, which specifies what the user is going to be looking for.",
+     "More specific instructions will be emailed to the recipient shortly."
+    ],
+    "matches": [
+     [
+      "P1"
+     ],
+     [
+      "P0"
+     ],
+     [
+      "P2"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 4
+    }
+   },
+   "ES2013a": {
+    "gold": [
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on the technical functions design.",
+     "The marketing expert will work on the user requirements specification"
+    ],
+    "pred": [
+     "The new remote control must be original, trendy and user-friendly.",
+     "The meeting agenda is to open the meeting, get acquainted, have tools training, create a plan and discuss things, within about twenty-five minutes.",
+     "Each team member will complete individual instructions assigned for the design project."
+    ],
+    "matches": [
+     [],
+     [],
+     []
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 3
+    }
+   },
+   "IS1008a": {
+    "gold": [
+     "The Marketing Expert will prepare a sales plan for the product and discuss the project budget and the sales strategy.",
+     "The Industrial Designer will prepare an initial functional design.",
+     "The User Interface Designer will contribute studies on user requirements to the functional design.",
+     "The Project Manager will post his presentation to be available for all participants."
+    ],
+    "pred": [
+     "The marketing representative will provide a project plan by the next meeting.",
+     "The industrial designer will provide a written functional design, technical design, team size, time frame, and initial budget for the project.",
+     "The project manager will send a written plan to the project manager's management, including cost, time frame, and project plan.",
+     "The project manager will coordinate with the marketing, technical, and administration teams to add documentation and technical input to the plan.",
+     "Marketing should interact with the designer and her team and come up with a sales plan including cost and how to compete in the market.",
+     "Send the sales plan, including the technical input from the team, so it can be discussed with management and put into the project plan.",
+     "Start determining the functional design and discuss it with the designer, beginning with user acceptance.",
+     "Share all discussions, documents and emails with the project manager so everyone stays informed.",
+     "Send a copy of the presentation slides to the project manager at the end of the meeting."
+    ],
+    "matches": [
+     [
+      "P4",
+      "P5",
+      "P0"
+     ],
+     [
+      "P1",
+      "P6"
+     ],
+     [
+      "P6"
+     ],
+     []
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 9
+    }
+   },
+   "IS1009a": {
+    "gold": [
+     "The industrial designer will work on the working design and technical function.",
+     "The interface specialist will do the working design and functional design.",
+     "The marketing manager will look for user requirement specifications such as friendliness"
+    ],
+    "pred": [
+     "Each team member will do individual work on the functional design, then the group will discuss it at the meeting.",
+     "A team member will try drawing on the whiteboard to check how it works for presenting in the next meeting.",
+     "Draw a snake.",
+     "The industrial designer will come back with a working design for the next meeting.",
+     "The industrial designer will produce a working design and then a functional design.",
+     "The marketing manager will come up with a user requirement specification covering friendliness and the other points discussed."
+    ],
+    "matches": [
+     [
+      "P3",
+      "P4"
+     ],
+     [
+      "P0"
+     ],
+     [
+      "P5"
+     ]
+    ],
+    "stats": {
+     "windows": 0,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 6
+    }
+   }
+  }
+ },
+ "routed/human": {
+  "recall": 0.679,
+  "precision_lower_bound": 0.636,
+  "gold": 28,
+  "gold_hit": 19,
+  "pred": 33,
+  "pred_hit": 21,
+  "escalated": 3,
+  "windows": 27,
+  "dropped_invalid": 0,
+  "pipeline_usd": 0.1373,
+  "judge_usd": 0.0183,
+  "usd_by_step": {
+   "extract": 0.01322,
+   "merge": 0.10083,
+   "judge": 0.0183,
+   "extract-retry": 0.02321
+  },
+  "calls_by_model": {
+   "claude-haiku-5-5": 27,
+   "claude-opus-5-5": 8,
+   "claude-sonnet-5-5": 3
+  },
+  "per_meeting": {
+   "ES2002a": {
+    "gold": [
+     "The industrial designer will work on the working design of the remote.",
+     "The user interface designer will work on the technical functions of the remote.",
+     "The marketing executive will work on what requirements the remote has to fulfill"
+    ],
+    "pred": [
+     "The team will reconvene for the next meeting in thirty minutes.",
+     "The industrial designer will work on the actual working design of the remote, including its user interface and technical functions.",
+     "The marketing executive will think about what requirements the remote control must fulfil."
+    ],
+    "matches": [
+     [
+      "P1"
+     ],
+     [
+      "P1"
+     ],
+     [
+      "P2"
+     ]
+    ],
+    "stats": {
+     "windows": 4,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 5
+    }
+   },
+   "ES2005a": {
+    "gold": [
+     "The Marketing Expert will examine the features and design of competitors' remotes.",
+     "The User Interface Designer will research possible shapes and colors for the device.",
+     "The Industrial Designer will research possible materials and the necessary internal components of the device."
+    ],
+    "pred": [
+     "The industrial designer will come up with shapes and suggested colours and shades to make the remote control attractive.",
+     "The industrial designer will look into how the remote control is made, including available materials.",
+     "The user interface designer will survey the competition by looking at other remote controls on the market."
+    ],
+    "matches": [
+     [],
+     [],
+     [
+      "P1"
+     ]
+    ],
+    "stats": {
+     "windows": 2,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 4
+    }
+   },
+   "ES2006a": {
+    "gold": [
+     "The marketing expert will work on user requirements specification.",
+     "The interface specialist will look at the working design.",
+     "The industrial designer will work on the technical functions design.",
+     "They will get specific instructions when they get back to their workspace."
+    ],
+    "pred": [
+     "Everyone will think about specific special features that could be included in the remote control.",
+     "The team will meet again in thirty minutes, with each member receiving specific instructions back at their workspace beforehand.",
+     "The Marketing Expert will do trend watching in the conceptual design stage and product evaluation in the detailed design stage.",
+     "The Designer will design the technical functions of the remote control in the first design stage.",
+     "The Designer will come up with the interface concept during the conceptual design stage.",
+     "The Designer will be responsible for the user interface design in the last design stage.",
+     "The Industrial Designer will design all the details of the product, including how it works and its components."
+    ],
+    "matches": [
+     [],
+     [
+      "P4",
+      "P5"
+     ],
+     [
+      "P3",
+      "P6"
+     ],
+     [
+      "P1"
+     ]
+    ],
+    "stats": {
+     "windows": 5,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 9
+    }
+   },
+   "ES2008a": {
+    "gold": [
+     "The project manager will investigate whether the team is to create a remote that is to be sued solely with televisions.",
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on technical functions.",
+     "The project manager will type up the minutes of the current meeting and e-mail those to the team members.",
+     "The project manager will e-mail her slides to the team members"
+    ],
+    "pred": [
+     "Look into whether video recorder functions can be included on the remote control.",
+     "Alima will do the working design of the remote control as the industrial designer.",
+     "Type up the meeting minutes and email them to all participants.",
+     "Put together the agenda for the next meeting.",
+     "Email the slides to the group as an attachment."
+    ],
+    "matches": [
+     [
+      "P0"
+     ],
+     [
+      "P1"
+     ],
+     [],
+     [
+      "P2"
+     ],
+     [
+      "P4"
+     ]
+    ],
+    "stats": {
+     "windows": 4,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 7
+    }
+   },
+   "ES2010a": {
+    "gold": [
+     "The Industrial Designer will work on the internal working design.",
+     "The User Interface Designer will work on the technical function design.",
+     "The Marketing Expert will research user requirements."
+    ],
+    "pred": [
+     "Each team member will do individual work on the functional design before the team meets again in thirty minutes.",
+     "The industrial designer will think about the working design.",
+     "The marketing person will write the user requirements specification describing what users will be looking for."
+    ],
+    "matches": [
+     [
+      "P1"
+     ],
+     [],
+     [
+      "P2"
+     ]
+    ],
+    "stats": {
+     "windows": 3,
+     "escalated": 2,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 6
+    }
+   },
+   "ES2013a": {
+    "gold": [
+     "The industrial designer will work on the working design.",
+     "The user interface designer will work on the technical functions design.",
+     "The marketing expert will work on the user requirements specification"
+    ],
+    "pred": [
+     "Everyone will try out the whiteboard."
+    ],
+    "matches": [
+     [],
+     [],
+     []
+    ],
+    "stats": {
+     "windows": 3,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 2
+    }
+   },
+   "IS1008a": {
+    "gold": [
+     "The Marketing Expert will prepare a sales plan for the product and discuss the project budget and the sales strategy.",
+     "The Industrial Designer will prepare an initial functional design.",
+     "The User Interface Designer will contribute studies on user requirements to the functional design.",
+     "The Project Manager will post his presentation to be available for all participants."
+    ],
+    "pred": [
+     "Provide a project plan by the next meeting.",
+     "Provide the written functional design, technical design, and project plan in two weeks.",
+     "Get back to the other person about which people are needed to contribute to the plan.",
+     "Marketing will work more closely with the design team on a sales plan covering the cost limit and market competition approach, including the design team's technical input, and send it to the project lead to discuss with management.",
+     "Start determining the functional design and discuss it with the design team and user acceptance testing.",
+     "Share all discussions and documents with everyone by email so the whole team stays informed.",
+     "Send a copy of the presentation slides at the end of the meeting."
+    ],
+    "matches": [
+     [
+      "P3"
+     ],
+     [
+      "P4",
+      "P1"
+     ],
+     [],
+     [
+      "P6"
+     ]
+    ],
+    "stats": {
+     "windows": 3,
+     "escalated": 0,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 8
+    }
+   },
+   "IS1009a": {
+    "gold": [
+     "The industrial designer will work on the working design and technical function.",
+     "The interface specialist will do the working design and functional design.",
+     "The marketing manager will look for user requirement specifications such as friendliness"
+    ],
+    "pred": [
+     "Each team member will do individual work on the functional design and then discuss what they came up with at the next meeting.",
+     "The industrial designer will come back with a working design for the next meeting.",
+     "The marketing manager will prepare a user requirement specification covering friendliness and the other points discussed.",
+     "The team will meet again in thirty minutes."
+    ],
+    "matches": [
+     [
+      "P1",
+      "P0"
+     ],
+     [
+      "P0"
+     ],
+     [
+      "P2"
+     ]
+    ],
+    "stats": {
+     "windows": 3,
+     "escalated": 1,
+     "dropped_invalid": 0,
+     "merge_bad_ids": 0,
+     "candidates": 6
+    }
+   }
+  }
+ }
+}

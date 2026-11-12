@@ -1,0 +1,73 @@
+{
+ "synthetic": {
+  "PERSON": {
+   "n": 30,
+   "removed": 15,
+   "examples_missed": [
+    "Tomasz said the budget is fine for now",
+    "okay um Elena is going to handle the user study",
+    "so I'll send the draft to Tomasz before Friday"
+   ],
+   "recall": 0.5
+  },
+  "PHONE_NUMBER": {
+   "n": 30,
+   "removed": 23,
+   "examples_missed": [
+    "my number is (597) 952-8499 if anything breaks",
+    "the supplier line is (576) 508-3346 I think",
+    "call me back on (550) 875-8240 after the meeting"
+   ],
+   "recall": 0.767
+  },
+  "EMAIL_ADDRESS": {
+   "n": 30,
+   "removed": 30,
+   "examples_missed": [],
+   "recall": 1.0
+  }
+ },
+ "leaks": {
+  "captures_stored": 247,
+  "captures_where_asr_heard_a_name": 9,
+  "stored_captures_with_a_name_left": 3,
+  "examples": [
+   [
+    "IS1008a-020",
+    [
+     "Christine"
+    ]
+   ],
+   [
+    "IS1008a-002",
+    [
+     "Agnes"
+    ]
+   ],
+   [
+    "IS1008a-025",
+    [
+     "Christine",
+     "Christine"
+    ]
+   ]
+  ],
+  "spans_redacted_total": 40,
+  "names_checked": [
+   "Laura",
+   "David",
+   "Andrew",
+   "Craig",
+   "Rose",
+   "Lindgren",
+   "Iain",
+   "Jessy",
+   "Courtney",
+   "Agnes",
+   "Christine",
+   "Shrida",
+   "Daseri"
+  ]
+ },
+ "synthetic_overall_recall": 0.756
+}

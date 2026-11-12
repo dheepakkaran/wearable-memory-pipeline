@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wearable Voice Memory</title>
+<meta name="description" content="The backend of a screenless voice wearable in miniature: device events, real-time local transcription, PII redaction, commitment extraction with model routing, and retrieval. Public meeting audio, measured results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --ink:#0a0a0a; --ink2:#3d3d3d; --muted:#737373; --line:#e5e5e5; --soft:#f5f5f5;
+  --bar0:#d4d4d4; --bar1:#0a0a0a;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0a0a0a;--ink:#fafafa;--ink2:#d4d4d4;--muted:#a3a3a3;--line:#262626;--soft:#141414;--bar0:#404040;--bar1:#fafafa}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+.narrow{max-width:680px}
+
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:26px;height:56px;overflow-x:auto;white-space:nowrap}
+nav .brand{font-weight:600;letter-spacing:-.01em;text-decoration:none;margin-right:auto}
+nav a{font-size:14px;color:var(--muted);text-decoration:none} nav a:hover{color:var(--ink)}
+
+header{padding:112px 0 88px;border-bottom:1px solid var(--line)}
+.kicker{font:500 12px/1 "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(38px,6vw,64px);line-height:1.05;letter-spacing:-.035em;font-weight:700;margin:22px 0 26px;max-width:820px}
+.lede{font-size:20px;line-height:1.6;color:var(--ink2);max-width:680px;margin:0}
+.meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:34px;font-size:14px;color:var(--muted)}
+.meta a{color:var(--ink)}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:30px 24px 30px 0}
+.stat + .stat{padding-left:24px;border-left:1px solid var(--line)}
+.stat .v{font-size:40px;font-weight:600;letter-spacing:-.035em;line-height:1;font-variant-numeric:tabular-nums}
+.stat .l{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.45}
+
+section{padding:96px 0;border-bottom:1px solid var(--line)}
+.num{font:500 12px/1 "JetBrains Mono",monospace;color:var(--muted);letter-spacing:.06em;margin-bottom:18px}
+h2{font-size:clamp(28px,3.6vw,38px);line-height:1.15;letter-spacing:-.03em;font-weight:700;margin:0 0 20px;max-width:760px}
+h3{font-size:17px;font-weight:600;letter-spacing:-.01em;margin:0 0 6px}
+p{margin:0 0 16px;color:var(--ink2)}
+.muted{color:var(--muted)}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+.item{border-top:1px solid var(--ink);padding-top:18px}
+.item p{font-size:15.5px;margin:0}
+
+table{width:100%;border-collapse:collapse;font-size:15px;margin:8px 0 0}
+th,td{text-align:left;padding:13px 12px 13px 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+td b{font-weight:600;color:var(--ink)}
+
+figure{margin:40px 0 0}
+figcaption{font-size:13.5px;color:var(--muted);margin-top:14px}
+.panel{border:1px solid var(--line);border-radius:4px;padding:28px}
+svg text{font-family:Inter,system-ui,sans-serif}
+.chart{width:100%;height:auto;display:block}
+.chart .gl{stroke:var(--line)} .chart .lab{fill:var(--ink);font-size:13px;font-weight:500}
+.chart .val{fill:var(--ink);font:500 12.5px "JetBrains Mono",monospace} .chart .val0{fill:var(--muted);font:500 12.5px "JetBrains Mono",monospace}
+.bar{transition:width 1s cubic-bezier(.25,.8,.25,1)}
+.key{display:flex;gap:22px;font-size:13px;color:var(--muted);margin-top:14px}
+.key i{display:inline-block;width:10px;height:10px;margin-right:7px;vertical-align:0}
+
+.pipe{width:100%;height:auto;display:block}
+.pipe rect{fill:var(--bg);stroke:var(--ink);stroke-width:1.2}
+.pipe .soft{stroke:var(--line);stroke-width:1.2}
+.pipe text{fill:var(--ink);font-size:13.5px;font-weight:600}
+.pipe .s{fill:var(--muted);font-size:11.5px;font-weight:400}
+.pipe path{stroke:var(--muted);stroke-width:1.2;fill:none}
+
+ol.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:48px 1fr;padding:22px 0;border-bottom:1px solid var(--line)}
+ol.steps li::before{content:counter(s,decimal-leading-zero);font:500 13px "JetBrains Mono",monospace;color:var(--muted);padding-top:2px}
+ol.steps h3{margin-bottom:4px} ol.steps p{margin:0;font-size:15.5px}
+
+pre{background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:22px;overflow:auto;font:13.5px/1.75 "JetBrains Mono",monospace;color:var(--ink);margin:0}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:11px 18px;border:1px solid var(--ink);border-radius:4px;text-decoration:none;font-size:15px;font-weight:500}
+.btn.solid{background:var(--ink);color:var(--bg)}
+.btn:hover{text-decoration:none;opacity:.85}
+footer{padding:44px 0 64px;font-size:13.5px;color:var(--muted)}
+
+.fade{opacity:0;transform:translateY(10px);transition:opacity .7s ease,transform .7s ease}
+.fade.in{opacity:1;transform:none}
+
+@media (max-width:820px){
+  .stats{grid-template-columns:1fr 1fr}.stat:nth-child(3){padding-left:0;border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .cols,.cols3{grid-template-columns:1fr;gap:28px} section{padding:72px 0} header{padding:80px 0 64px}
+  th:nth-child(1),td:nth-child(1){padding-right:8px}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}.fade{opacity:1;transform:none}}
+.code{font:13px/1.7 "JetBrains Mono",monospace}
+.cols>*,.cols3>*{min-width:0}
+.tag{display:inline-block;font:500 11px/1 "JetBrains Mono",monospace;border:1px solid var(--line);padding:4px 7px;border-radius:3px;color:var(--muted);margin-right:6px}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#">Wearable Voice Memory</a>
+<a href="#problem">Problem</a><a href="#approach">Approach</a><a href="#results">Results</a><a href="#sample">Sample run</a><a href="#lessons">Lessons</a><a href="#run">Run</a>
+<a href="https://github.com/dheepakkaran/wearable-memory-pipeline">GitHub</a>
+</div></nav>
+
+<header>
+<div class="wrap">
+<div class="kicker">Prototype · public meeting audio · November 2026</div>
+<h1>A voice wearable that remembers what you promised, without keeping what you said.</h1>
+<p class="lede">The backend of a screenless wrist assistant, in miniature. A simulated device streams button-press voice captures, a real-time path transcribes them on the machine and strips personal details, a batch path pulls out commitments and memories with a routed set of models, and you can ask it what was said.</p>
+<div class="meta"><span>Python · FastAPI · faster-whisper · Redis Streams · PostgreSQL + pgvector · Claude</span><a href="https://github.com/dheepakkaran/wearable-memory-pipeline">Source code</a><a href="https://github.com/dheepakkaran/wearable-memory-pipeline/blob/main/RESULTS.md">Results</a></div>
+</div>
+</header>
+
+<div class="wrap">
+<div class="stats">
+<div class="stat"><div class="v" data-count="1.69" data-dec="2" data-suffix=" s">1.69 s</div><div class="l">from button release to a redacted transcript in the database (median, real-time run).</div></div>
+<div class="stat"><div class="v" data-count="93.3" data-dec="1" data-suffix="%">93.3%</div><div class="l">of injected names, phone numbers and emails removed before storage. Version 1: 75.6%.</div></div>
+<div class="stat"><div class="v" data-count="67" data-suffix="%">67%</div><div class="l">lower model cost than Opus everywhere, at 19 vs 23 of 28 action items found.</div></div>
+<div class="stat"><div class="v" data-count="0.98" data-dec="2" data-prefix="$">$0.98</div><div class="l">total model spend for every run and judge call, under a $1.00 cap in code.</div></div>
+</div>
+</div>
+
+<section id="problem">
+<div class="wrap">
+<div class="num">01 — Problem</div>
+<h2 class="fade">A wrist device hears a lot. It should keep the promises, not the recordings.</h2>
+<div class="narrow fade">
+<p>A screenless assistant has no screen to fix mistakes on. It has to turn short, noisy voice captures into something reliable: what was said, what was decided, and who agreed to do what. It also hears other people, so names and numbers must not leak into storage or into a language model.</p>
+</div>
+<div class="cols" style="margin-top:40px">
+<div class="item fade"><h3>Real time and batch</h3><p>A capture should be searchable within seconds of the button release. Summaries and commitments can wait for an end-of-day job that sees the whole meeting.</p></div>
+<div class="item fade"><h3>Cheap by default</h3><p>Most of the day is small talk. The expensive model should only see what the cheap model and plain code could not settle.</p></div>
+</div>
+<div class="cols3" style="margin-top:48px">
+<div class="fade"><h3>Data</h3><p class="muted" style="font-size:15.5px">8 meetings from the AMI Meeting Corpus (CC BY 4.0), about two hours, cut into 247 captures of 30 seconds.</p></div>
+<div class="fade"><h3>Answer key</h3><p class="muted" style="font-size:15.5px">28 action items written by AMI's human annotators, the human word-level transcript, and 20 questions frozen before any run.</p></div>
+<div class="fade"><h3>What it is not</h3><p class="muted" style="font-size:15.5px">Hardware. The device is a simulator, and meeting microphones are not a wrist. No firmware, no Bluetooth.</p></div>
+</div>
+</div>
+</section>
+
+<section id="approach">
+<div class="wrap">
+<div class="num">02 — Approach</div>
+<h2 class="fade">Local models where audio and identity are involved, a language model only on redacted text.</h2>
+<figure class="panel fade">
+<svg viewBox="0 0 900 300" class="pipe" role="img" aria-label="Pipeline: device events, ingestion, Redis stream, real-time worker, PostgreSQL; batch extraction with Haiku, validator, Sonnet retry, Opus merge; app layer ask and today">
+<defs><marker id="ar" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" style="fill:var(--muted);stroke:none"/></marker></defs>
+<rect x="10" y="30" width="120" height="64" rx="3" class="soft"/><text x="70" y="59" text-anchor="middle">Wrist device</text><text x="70" y="78" text-anchor="middle" class="s">simulated events</text>
+<rect x="170" y="30" width="140" height="64" rx="3"/><text x="240" y="59" text-anchor="middle">Ingestion</text><text x="240" y="78" text-anchor="middle" class="s">validate · dedupe</text>
+<rect x="350" y="30" width="130" height="64" rx="3"/><text x="415" y="59" text-anchor="middle">Redis Stream</text><text x="415" y="78" text-anchor="middle" class="s">one per capture</text>
+<rect x="520" y="30" width="180" height="64" rx="3"/><text x="610" y="59" text-anchor="middle">Real-time worker</text><text x="610" y="78" text-anchor="middle" class="s">Whisper · redact · embed</text>
+<rect x="740" y="30" width="150" height="64" rx="3" style="fill:var(--ink)"/><text x="815" y="59" text-anchor="middle" style="fill:var(--bg)">PostgreSQL</text><text x="815" y="78" text-anchor="middle" class="s" style="fill:var(--bar0)">redacted + vectors</text>
+<rect x="350" y="170" width="350" height="64" rx="3"/><text x="525" y="199" text-anchor="middle">Batch: Haiku → validator → Sonnet → Opus</text><text x="525" y="218" text-anchor="middle" class="s">commitments · memories · summary</text>
+<rect x="740" y="170" width="150" height="64" rx="3" class="soft"/><text x="815" y="199" text-anchor="middle">App layer</text><text x="815" y="218" text-anchor="middle" class="s">/ask · /today</text>
+<path d="M130,62 H170" marker-end="url(#ar)"/><path d="M310,62 H350" marker-end="url(#ar)"/><path d="M480,62 H520" marker-end="url(#ar)"/><path d="M700,62 H740" marker-end="url(#ar)"/>
+<path d="M815,94 V130 H525 V170" marker-end="url(#ar)"/><path d="M700,202 H740" marker-end="url(#ar)"/>
+<text x="610" y="275" text-anchor="middle" class="s">audio never leaves the machine and is deleted after transcription · only redacted text reaches the language model</text>
+</svg>
+</figure>
+<ol class="steps" style="margin-top:40px">
+<li class="fade"><div><h3>Device events, idempotent ingestion</h3><p>Each press sends button_down, six 5-second audio chunks and button_up. The API validates every event and drops repeats by event id, so a flaky upload can be re-sent safely. Button release publishes the capture to a Redis Stream.</p></div></li>
+<li class="fade"><div><h3>Real-time path on the machine</h3><p>A worker reads the stream, transcribes with faster-whisper (int8, CPU), redacts names, phone numbers and emails with Presidio, embeds with bge-small, stores the redacted text in PostgreSQL with pgvector, and deletes the audio.</p></div></li>
+<li class="fade"><div><h3>Batch path with model routing</h3><p>Claude Haiku reads 5-minute windows and returns strict JSON, each item with an evidence quote. Plain code checks every quote is word for word in the cited capture. Failed windows go to Sonnet once. Opus makes the final call per meeting: merge duplicates, drop non-commitments.</p></div></li>
+<li class="fade"><div><h3>App layer</h3><p><span class="code">/ask</span> searches captures (keyword, vector or hybrid) and memories. <span class="code">/today</span> lists open commitments with the captures they came from. Every model call goes to a cost ledger with a hard cap.</p></div></li>
+</ol>
+</div>
+</section>
+
+<section id="results">
+<div class="wrap">
+<div class="num">03 — Results</div>
+<h2 class="fade">Measured on 8 meetings, against human transcripts and human action items.</h2>
+<div class="narrow fade"><p>Questions, answer key and prompts were frozen by hash before the first run. Commitments were graded by Claude Sonnet with a fixed prompt, never by the model being graded.</p></div>
+
+<figure class="fade">
+<h3>Commitments found, from the Whisper transcripts</h3>
+<p class="muted" style="font-size:15px">Recall = human action items found, out of 28. Precision is a lower bound: the human list misses real commitments.</p>
+<svg viewBox="0 0 900 230" class="chart" id="c1"></svg>
+<div class="key"><span><i style="background:var(--bar0)"></i>Recall</span><span><i style="background:var(--bar1)"></i>Precision (lower bound)</span></div>
+<figcaption>The routed setup cuts noise (44 → 29 predictions vs Haiku alone) but finds no more items. Opus everywhere finds 4 more, at three times the cost.</figcaption>
+</figure>
+
+<figure class="fade" style="margin-top:64px">
+<h3>Finding the right capture</h3>
+<p class="muted" style="font-size:15px">20 questions over all 8 meetings. Right capture in the top 3, and how high it ranks (MRR@10).</p>
+<svg viewBox="0 0 900 175" class="chart" id="c2"></svg>
+<div class="key"><span><i style="background:var(--bar0)"></i>hit@3</span><span><i style="background:var(--bar1)"></i>MRR@10</span></div>
+<figcaption>Embeddings did not beat keywords here: meeting talk repeats distinctive words. The hybrid ranks the right capture first most often.</figcaption>
+</figure>
+
+<div style="margin-top:64px" class="fade">
+<table>
+<thead><tr><th>Measure</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td>Device events uploaded / re-sent on purpose</td><td style="font-variant-numeric:tabular-nums">1,963 / 118 → <b>247</b> captures, none doubled</td></tr>
+<tr><td>Transcription per 30 s capture (int8, CPU)</td><td style="font-variant-numeric:tabular-nums">p50 <b>2.39 s</b> · p95 7.71 s</td></tr>
+<tr><td>Word error rate vs human transcript</td><td style="font-variant-numeric:tabular-nums"><b>22.8%</b> (base.en, table microphones)</td></tr>
+<tr><td>int8 vs float32 weights, 30 captures</td><td style="font-variant-numeric:tabular-nums"><b>1.26x</b> faster · WER 21.7% vs 21.1%</td></tr>
+<tr><td>Button release → stored, real-time run</td><td style="font-variant-numeric:tabular-nums">p50 <b>1.69 s</b> · p95 3.14 s (8 captures)</td></tr>
+<tr><td>Injected PII removed: names / phones / emails</td><td style="font-variant-numeric:tabular-nums"><b>24/30 · 30/30 · 30/30</b></td></tr>
+<tr><td>Stored captures still holding a participant's name</td><td style="font-variant-numeric:tabular-nums"><b>2</b> of 12 where a name was heard</td></tr>
+<tr><td>Action items found on the human transcript</td><td style="font-variant-numeric:tabular-nums">Haiku 22/28 · routed 19/28 · regex 27/28 at 13% precision</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="cols" style="margin-top:56px">
+<div class="fade"><h3>Why speech recognition matters downstream</h3><p style="font-size:15.5px">The same Haiku step finds 22 of 28 action items on the human transcript and 19 on the Whisper transcript. "Twelve fifty euro" came out as 1250, and the summary repeated it.</p></div>
+<div class="fade"><h3>Where the money went</h3>
+<svg viewBox="0 0 440 96" class="chart" id="c3"></svg>
+<p class="muted" style="font-size:14px;margin-top:10px">All runs, including the Opus-everywhere comparison and the Sonnet judge. 271 calls.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="sample">
+<div class="wrap">
+<div class="num">04 — Sample run</div>
+<h2 class="fade">What the phone app would get back.</h2>
+<div class="cols fade" style="margin-top:24px">
+<div><h3>GET /today?meeting_id=ES2010a</h3>
+<pre>[
+  { "text": "Each team member will do individual
+             work on the functional design, and
+             the team will reconvene in 30 minutes.",
+    "owner": "the team", "due": "in 30 minutes",
+    "capture_ids": ["ES2010a-003","ES2010a-019"] },
+  { "text": "The industrial designer will think
+             about the working design.",
+    "owner": "ID",
+    "capture_ids": ["ES2010a-019"] },
+  { "text": "The marketing person will do the user
+             requirements specification.",
+    "owner": "marketing person",
+    "capture_ids": ["ES2010a-020"] }
+]</pre></div>
+<div><h3>GET /ask?q=what did we say about batteries</h3>
+<pre>captures
+  ES2008a-022  "...remotes that don't require
+               batteries... we could use like a
+               lithium battery that would last..."
+  ES2006a-040  "Every now and then you need to
+               replace the batteries..."
+memories
+  "A lithium battery could be used instead
+   of AAA batteries because it would last
+   much longer."              (ES2008a-022)
+
+stored transcript, after redaction:
+  "My name is &lt;PERSON&gt;. I'll be the
+   project manager..."        (ES2008a-001)</pre></div>
+</div>
+</div>
+</section>
+
+<section id="lessons">
+<div class="wrap">
+<div class="num">05 — Lessons</div>
+<h2 class="fade">What broke, and what changed because of it.</h2>
+<ol class="steps">
+<li class="fade"><div><h3>Privacy v1 missed half the names</h3><p>The small spaCy model removed 15 of 30 names, and Presidio rejected phone numbers with unreal area codes. Version 2 (medium model and a plain phone pattern) reached 24, 30 and 30 of 30. In the real meetings, 2 captures still keep a name.</p></div></li>
+<li class="fade"><div><h3>Routing saved money, not recall</h3><p>The 4 items routing missed were never extracted by Haiku. The Opus merge only removed noise, and on the human transcript it also dropped 3 true items. Next: send windows with role-assignment talk to the stronger model.</p></div></li>
+<li class="fade"><div><h3>The final merge was most of the routed cost</h3><p>8 Opus merge calls were about $0.10 of $0.135. Next: measure Sonnet for the merge.</p></div></li>
+<li class="fade"><div><h3>One run hung on a single API call</h3><p>No timeout was set. Calls now time out after 60 seconds with 3 retries, and the cost cap is checked before every call.</p></div></li>
+</ol>
+<div class="cols" style="margin-top:56px">
+<div class="fade"><h3>Limits</h3><p style="font-size:15.5px">Simulated device. Meeting audio from table microphones, not a wrist. 28 action items and 20 questions are small sets. The real-time run is 8 captures. The leak scan only checks names someone listed.</p></div>
+<div class="fade"><h3>Next</h3><p style="font-size:15.5px">A contact list on the device for name redaction, a larger speech model for captures with numbers, stronger-model routing for assignment talk, and a week of a real wearer's captures to measure what people actually ask.</p></div>
+</div>
+</div>
+</section>
+
+<section id="run" style="border-bottom:0">
+<div class="wrap">
+<div class="num">06 — Run</div>
+<h2 class="fade">No Docker, no sudo: services come from pixi.</h2>
+<pre class="fade">uv sync && pixi install && scripts/services.sh start    # Redis + PostgreSQL/pgvector
+scripts/get_audio.sh ES2002a ES2005a ...                 # AMI audio (CC BY 4.0)
+python eval/make_gold.py ES2002a ES2005a ...             # human answer key
+PYTHONPATH=src uvicorn wmp.api:app --port 8091 &
+PYTHONPATH=src python sim/device.py ES2002a --dup-rate 0.05
+PYTHONPATH=src python -m wmp.worker --once --eval-raw    # real-time path
+PYTHONPATH=src python eval/commitments.py                # batch path + scoring
+python eval/report.py                                    # RESULTS.md
+python -m pytest -q                                      # 12 tests</pre>
+<div class="btns">
+<a class="btn solid" href="https://github.com/dheepakkaran/wearable-memory-pipeline">View on GitHub</a>
+<a class="btn" href="https://github.com/dheepakkaran/wearable-memory-pipeline/blob/main/RESULTS.md">Results</a>
+<a class="btn" href="https://github.com/dheepakkaran/wearable-memory-pipeline/blob/main/FAILURES.md">Failures</a>
+</div>
+</div>
+</section>
+
+<footer><div class="wrap">Dheepak Karan Elumalai Santhakumari · Independent project. Audio and annotations: AMI Meeting Corpus, CC BY 4.0. The device is simulated. Not affiliated with any company.</div></footer>
+
+<script>
+const NS = "http://www.w3.org/2000/svg", reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); p && p.appendChild(e); return e; };
+const txt = (p, a, s) => { const t = el("text", a, p); t.textContent = s; return t; };
+
+function bars(id, rows) {
+  const s = document.getElementById(id), L = 230, R = 820, top = 10, rh = 54, bh = 14;
+  [0, .5, 1].forEach(f => el("line", {x1: L + (R - L) * f, x2: L + (R - L) * f, y1: 4, y2: top + rh * rows.length - 8, class: "gl"}, s));
+  rows.forEach((r, i) => {
+    const y = top + i * rh;
+    txt(s, {x: 0, y: y + bh + 6, class: "lab"}, r.label);
+    [[r.a, r.at, "var(--bar0)", "val0"], [r.b, r.bt, "var(--bar1)", "val"]].forEach(([v, t, c, cl], k) => {
+      const yy = y + k * (bh + 5), w = (R - L) * v;
+      const b = el("rect", {x: L, y: yy, height: bh, width: reduce ? Math.max(w, 1) : 0, fill: c, class: "bar"}, s); b.dataset.w = Math.max(w, 1);
+      txt(s, {x: L + Math.max(w, 1) + 8, y: yy + bh - 2, class: cl}, t);
+    });
+  });
+}
+bars("c1", [
+  {label: "Regex baseline · $0", a: 19 / 28, at: "19 / 28", b: .108, bt: "10.8%"},
+  {label: "Haiku only · $0.014", a: 19 / 28, at: "19 / 28", b: .50, bt: "50.0%"},
+  {label: "Routed · $0.135", a: 19 / 28, at: "19 / 28", b: .69, bt: "69.0%"},
+  {label: "Opus everywhere · $0.409", a: 23 / 28, at: "23 / 28", b: .733, bt: "73.3%"}]);
+bars("c2", [
+  {label: "BM25 keywords", a: .90, at: "18 / 20", b: .792, bt: "0.792"},
+  {label: "Vector (bge-small)", a: .90, at: "18 / 20", b: .725, bt: "0.725"},
+  {label: "Hybrid (RRF)", a: .85, at: "17 / 20", b: .841, bt: "0.841"}]);
+
+(() => {
+  const s = document.getElementById("c3"), parts = [["Opus", .6595, "var(--bar1)"], ["Sonnet", .2538, "#737373"], ["Haiku", .0685, "var(--bar0)"]];
+  const tot = parts.reduce((a, p) => a + p[1], 0); let x = 0;
+  parts.forEach(p => {
+    const w = 360 * p[1] / tot;
+    el("rect", {x, y: 8, width: w - 2, height: 26, fill: p[2]}, s);
+    txt(s, {x, y: 58, class: "val0"}, p[0]); txt(s, {x, y: 78, class: "val"}, "$" + p[1].toFixed(3));
+    x += w;
+  });
+})();
+
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return; const t = e.target; t.classList.add("in");
+  t.querySelectorAll(".bar").forEach(b => b.setAttribute("width", b.dataset.w));
+  io.unobserve(t);
+}), {threshold: .15});
+document.querySelectorAll(".fade").forEach(e => io.observe(e));
+
+if (!reduce) document.querySelectorAll("[data-count]").forEach(n => {
+  const to = +n.dataset.count, dec = +(n.dataset.dec || 0), pre = n.dataset.prefix || "", suf = n.dataset.suffix || "", t0 = performance.now();
+  const f = now => { const p = Math.min(1, (now - t0) / 1100), v = to * (1 - Math.pow(1 - p, 3)); n.textContent = pre + v.toFixed(dec) + suf; if (p < 1) requestAnimationFrame(f); };
+  requestAnimationFrame(f);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+ "captures": 230,
+ "wer": 0.2283,
+ "per_meeting": {
+  "ES2002a": 0.2565,
+  "ES2005a": 0.3561,
+  "ES2006a": 0.183,
+  "ES2008a": 0.2206,
+  "ES2010a": 0.2842,
+  "ES2013a": 0.2286,
+  "IS1008a": 0.1566,
+  "IS1009a": 0.2628
+ },
+ "model": "base.en",
+ "compute": "int8",
+ "note": "lowercased, punctuation and fillers (um, uh, mm-hmm ...) removed from both sides; words cut at 30 s capture borders count against both"
+}

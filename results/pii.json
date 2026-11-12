@@ -1,0 +1,64 @@
+{
+ "synthetic": {
+  "PERSON": {
+   "n": 30,
+   "removed": 24,
+   "examples_missed": [
+    "Tomasz said the budget is fine for now",
+    "so I'll send the draft to Tomasz before Friday",
+    "so I'll send the draft to Diego before Friday"
+   ],
+   "recall": 0.8
+  },
+  "PHONE_NUMBER": {
+   "n": 30,
+   "removed": 30,
+   "examples_missed": [],
+   "recall": 1.0
+  },
+  "EMAIL_ADDRESS": {
+   "n": 30,
+   "removed": 30,
+   "examples_missed": [],
+   "recall": 1.0
+  }
+ },
+ "leaks": {
+  "captures_stored": 247,
+  "captures_where_asr_heard_a_name": 12,
+  "stored_captures_with_a_name_left": 2,
+  "examples": [
+   [
+    "ES2008a-003",
+    [
+     "Amina"
+    ]
+   ],
+   [
+    "IS1008a-002",
+    [
+     "Agnes"
+    ]
+   ]
+  ],
+  "spans_redacted_total": 43,
+  "names_checked": [
+   "Laura",
+   "David",
+   "Andrew",
+   "Craig",
+   "Rose",
+   "Lindgren",
+   "Iain",
+   "Jessy",
+   "Courtney",
+   "Agnes",
+   "Christine",
+   "Shrida",
+   "Daseri",
+   "Alima",
+   "Amina"
+  ]
+ },
+ "synthetic_overall_recall": 0.933
+}
