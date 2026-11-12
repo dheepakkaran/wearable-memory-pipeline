@@ -1,0 +1,467 @@
+{
+ "meeting": "ES2010a",
+ "first": 16,
+ "audio": "demo/ES2010a-016.ogg",
+ "audio_s": 164.288,
+ "events": [
+  {
+   "t": 0.0,
+   "type": "button_down",
+   "capture_id": "ES2010a-016",
+   "seq": 0
+  },
+  {
+   "t": 5.015,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-016",
+   "seq": 0
+  },
+  {
+   "t": 10.027,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-016",
+   "seq": 1
+  },
+  {
+   "t": 15.043,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-016",
+   "seq": 2
+  },
+  {
+   "t": 20.057,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-016",
+   "seq": 3
+  },
+  {
+   "t": 25.074,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-016",
+   "seq": 4
+  },
+  {
+   "t": 30.076,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-016",
+   "seq": 5
+  },
+  {
+   "t": 30.079,
+   "type": "button_up",
+   "capture_id": "ES2010a-016",
+   "seq": 0
+  },
+  {
+   "t": 30.098,
+   "type": "button_down",
+   "capture_id": "ES2010a-017",
+   "seq": 0
+  },
+  {
+   "t": 35.107,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-017",
+   "seq": 0
+  },
+  {
+   "t": 40.118,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-017",
+   "seq": 1
+  },
+  {
+   "t": 45.133,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-017",
+   "seq": 2
+  },
+  {
+   "t": 50.145,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-017",
+   "seq": 3
+  },
+  {
+   "t": 55.157,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-017",
+   "seq": 4
+  },
+  {
+   "t": 60.17,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-017",
+   "seq": 5
+  },
+  {
+   "t": 60.178,
+   "type": "button_up",
+   "capture_id": "ES2010a-017",
+   "seq": 0
+  },
+  {
+   "t": 60.196,
+   "type": "button_down",
+   "capture_id": "ES2010a-018",
+   "seq": 0
+  },
+  {
+   "t": 65.207,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-018",
+   "seq": 0
+  },
+  {
+   "t": 70.226,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-018",
+   "seq": 1
+  },
+  {
+   "t": 75.232,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-018",
+   "seq": 2
+  },
+  {
+   "t": 80.245,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-018",
+   "seq": 3
+  },
+  {
+   "t": 85.261,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-018",
+   "seq": 4
+  },
+  {
+   "t": 90.275,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-018",
+   "seq": 5
+  },
+  {
+   "t": 90.284,
+   "type": "button_up",
+   "capture_id": "ES2010a-018",
+   "seq": 0
+  },
+  {
+   "t": 90.301,
+   "type": "button_down",
+   "capture_id": "ES2010a-019",
+   "seq": 0
+  },
+  {
+   "t": 95.312,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-019",
+   "seq": 0
+  },
+  {
+   "t": 100.324,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-019",
+   "seq": 1
+  },
+  {
+   "t": 105.335,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-019",
+   "seq": 2
+  },
+  {
+   "t": 110.351,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-019",
+   "seq": 3
+  },
+  {
+   "t": 115.366,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-019",
+   "seq": 4
+  },
+  {
+   "t": 120.371,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-019",
+   "seq": 5
+  },
+  {
+   "t": 120.374,
+   "type": "button_up",
+   "capture_id": "ES2010a-019",
+   "seq": 0
+  },
+  {
+   "t": 120.381,
+   "type": "button_down",
+   "capture_id": "ES2010a-020",
+   "seq": 0
+  },
+  {
+   "t": 125.383,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-020",
+   "seq": 0
+  },
+  {
+   "t": 130.397,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-020",
+   "seq": 1
+  },
+  {
+   "t": 135.41,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-020",
+   "seq": 2
+  },
+  {
+   "t": 140.415,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-020",
+   "seq": 3
+  },
+  {
+   "t": 145.424,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-020",
+   "seq": 4
+  },
+  {
+   "t": 150.438,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-020",
+   "seq": 5
+  },
+  {
+   "t": 150.446,
+   "type": "button_up",
+   "capture_id": "ES2010a-020",
+   "seq": 0
+  },
+  {
+   "t": 150.461,
+   "type": "button_down",
+   "capture_id": "ES2010a-021",
+   "seq": 0
+  },
+  {
+   "t": 155.474,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-021",
+   "seq": 0
+  },
+  {
+   "t": 160.485,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-021",
+   "seq": 1
+  },
+  {
+   "t": 165.497,
+   "type": "audio_chunk",
+   "capture_id": "ES2010a-021",
+   "seq": 2
+  },
+  {
+   "t": 165.505,
+   "type": "button_up",
+   "capture_id": "ES2010a-021",
+   "seq": 0
+  }
+ ],
+ "stored": [
+  {
+   "t": 34.556,
+   "capture_id": "ES2010a-016",
+   "heard": "you. Contro options to go with remote anyways. Okay and another thing that I think is important is the design of the product, how it feels in your hand. If it's just flat and kind of boring, those don't, nobody wants to buy those anymore. They want the ergonomic one. They want like the flashy one. Yeah, so like this keep going this way guys. One's that look high tech too.",
+   "stored": "you. <PERSON> options to go with remote anyways. Okay and another thing that I think is important is the design of the product, how it feels in your hand. If it's just flat and kind of boring, those don't, nobody wants to buy those anymore. They want the ergonomic one. They want like the flashy one. Yeah, so like this keep going this way guys. One's that look high tech too.",
+   "pii_spans": 1,
+   "transcribe_ms": 2401,
+   "e2e_ms": 4478
+  },
+  {
+   "t": 62.267,
+   "capture_id": "ES2010a-017",
+   "heard": "So that people like mine with the curvature like that matches the curvature of a hand. Yeah. Anybody have any experiences with remote controls that they can remember that? That's fast one. Yeah. That's true. What kind of battery would we want to use? Because battery changing is usually double A. Okay. Do some of them use triple A's though? Yeah, some use triple A's. So double or triple.",
+   "stored": "So that people like mine with the curvature like that matches the curvature of a hand. Yeah. Anybody have any experiences with remote controls that they can remember that? That's fast one. Yeah. That's true. What kind of battery would we want to use? Because battery changing is usually double A. Okay. Do some of them use triple A's though? Yeah, some use triple A's. So double or triple.",
+   "pii_spans": 0,
+   "transcribe_ms": 2017,
+   "e2e_ms": 2097
+  },
+  {
+   "t": 92.255,
+   "capture_id": "ES2010a-018",
+   "heard": "Yeah, I guess then it We need to do triple a we can but most people usually have the ways around okay, yeah But that has to do with the size of it too Well as long as we know that issue is Yeah, if we wanted to be more thin than we'd probably want to go with a triple a But go with a small lithium battery. It's okay. We don't have to decide about it now just as long as we remember Battery type and size is important Hey anything else?",
+   "stored": "Yeah, I guess then it We need to do triple a we can but most people usually have the ways around okay, yeah But that has to do with the size of it too Well as long as we know that issue is Yeah, if we wanted to be more thin than we'd probably want to go with a triple a But go with a small lithium battery. It's okay. We don't have to decide about it now just as long as we remember Battery type and size is important Hey anything else?",
+   "pii_spans": 0,
+   "transcribe_ms": 1892,
+   "e2e_ms": 1978
+  },
+  {
+   "t": 121.772,
+   "capture_id": "ES2010a-019",
+   "heard": "All right, moving along. Oh, we're closing the meeting. Next meeting is going to start in 30 minutes. Here's what we're going to do. The ID, which is who? Okay. You're going to think about the working design. Okay, and you ID.",
+   "stored": "All right, moving along. Oh, we're closing the meeting. Next meeting is going to start in 30 minutes. Here's what we're going to do. The ID, which is who? Okay. You're going to think about the working design. Okay, and you ID.",
+   "pii_spans": 0,
+   "transcribe_ms": 1340,
+   "e2e_ms": 1401
+  },
+  {
+   "t": 152.926,
+   "capture_id": "ES2010a-020",
+   "heard": "The technical functions design, making sure it does everything that we need, the functionality of it, operating all those different things. Okay. And the marketing person, Courtney is going to do the user requirements specification. I guess that means specifying what exactly the user is going to be looking for, right? Right. I would think so. and you're gonna get more specific as you can see.",
+   "stored": "The technical functions design, making sure it does everything that we need, the functionality of it, operating all those different things. Okay. And the marketing person, <PERSON> is going to do the user requirements specification. I guess that means specifying what exactly the user is going to be looking for, right? Right. I would think so. and you're gonna get more specific as you can see.",
+   "pii_spans": 1,
+   "transcribe_ms": 2409,
+   "e2e_ms": 2488
+  },
+  {
+   "t": 166.6,
+   "capture_id": "ES2010a-021",
+   "heard": "instructions emailed to you in just a little while. Okay, so does anybody have anything they want to say before closing meeting? Okay, this meeting is officially over.",
+   "stored": "instructions emailed to you in just a little while. Okay, so does anybody have anything they want to say before closing meeting? Okay, this meeting is officially over.",
+   "pii_spans": 0,
+   "transcribe_ms": 1056,
+   "e2e_ms": 1103
+  }
+ ],
+ "batch": {
+  "calls": [
+   {
+    "step": "extract",
+    "model": "claude-haiku-5-5",
+    "in": 1870,
+    "out": 898,
+    "usd": 0.00056,
+    "s": 4.03
+   },
+   {
+    "step": "extract",
+    "model": "claude-haiku-5-5",
+    "in": 2201,
+    "out": 1346,
+    "usd": 0.000817,
+    "s": 5.35
+   },
+   {
+    "step": "extract",
+    "model": "claude-haiku-5-5",
+    "in": 1032,
+    "out": 178,
+    "usd": 0.000116,
+    "s": 1.5
+   },
+   {
+    "step": "merge",
+    "model": "claude-opus-5-5",
+    "in": 915,
+    "out": 408,
+    "usd": 0.009811,
+    "s": 4.34
+   },
+   {
+    "step": "summary",
+    "model": "claude-haiku-5-5",
+    "in": 2832,
+    "out": 253,
+    "usd": 0.00041,
+    "s": 1.83
+   }
+  ],
+  "stats": {
+   "windows": 3,
+   "escalated": 0,
+   "dropped_invalid": 0,
+   "merge_bad_ids": 0,
+   "candidates": 6
+  },
+  "gold": [
+   "The Industrial Designer will work on the internal working design.",
+   "The User Interface Designer will work on the technical function design.",
+   "The Marketing Expert will research user requirements."
+  ],
+  "matches": [
+   [
+    "P1"
+   ],
+   [],
+   [
+    "P2"
+   ]
+  ],
+  "commitments": [
+   {
+    "text": "Each team member will do individual work on the functional design, and the team will reconvene for the next meeting in 30 minutes.",
+    "owner": "the team",
+    "due": "in 30 minutes",
+    "capture_ids": [
+     "ES2010a-003",
+     "ES2010a-019"
+    ]
+   },
+   {
+    "text": "The industrial designer will think about the working design.",
+    "owner": "ID",
+    "due": "",
+    "capture_ids": [
+     "ES2010a-019"
+    ]
+   },
+   {
+    "text": "The marketing person will do the user requirements specification.",
+    "owner": "marketing person",
+    "due": "",
+    "capture_ids": [
+     "ES2010a-020"
+    ]
+   },
+   {
+    "text": "Instructions will be emailed to the team shortly after the meeting.",
+    "owner": "",
+    "due": "in a little while",
+    "capture_ids": [
+     "ES2010a-021"
+    ]
+   }
+  ],
+  "memories": [
+   {
+    "text": "The team's goal is to make a new remote control that is original, trendy, and user-friendly.",
+    "capture_ids": [
+     "ES2010a-002"
+    ]
+   },
+   {
+    "text": "The selling price for the remote is 25 euro.",
+    "capture_ids": [
+     "ES2010a-012"
+    ]
+   },
+   {
+    "text": "The profit aim for the project is 50 million euro.",
+    "capture_ids": [
+     "ES2010a-012"
+    ]
+   },
+   {
+    "text": "Production cost must be a maximum of 1250 euro per remote.",
+    "capture_ids": [
+     "ES2010a-013"
+    ]
+   },
+   {
+    "text": "Battery type and size is important to remember for the remote.",
+    "capture_ids": [
+     "ES2010a-018"
+    ]
+   }
+  ],
+  "summary": "This kickoff meeting for a new remote control project opened with introductions and a fun icebreaker in which participants sketched and described their favorite animals. The team then set a goal of a trendy, user-friendly, original remote with a 25 euro selling price, a 50 million euro profit aim, and production costs capped at 1250 euro per remote, and brainstormed features such as multi-device compatibility, clear instructions, ergonomic design, and battery type (double or triple A versus a small lithium battery, undecided). Roles were assigned for individual work: industrial design, technical functions design, and marketing user requirements specification, with each person to work individually before reconvening. The next meeting is set to start in about 30 minutes, and participants will receive follow-up instructions by email."
+ }
+}

@@ -67,7 +67,7 @@ def run(once: bool, idle_exit_s: float, eval_raw: bool, name: str = "worker-1"):
                     raw_log.write(json.dumps({"capture_id": cid, "meeting_id": info.get("meeting_id"),
                                               "start_s": info.get("start_s"), "end_s": info.get("end_s"),
                                               "raw": text, "audio_s": len(audio) / 16000,
-                                              "transcribe_ms": tr_ms, "e2e_ms": e2e_ms,
+                                              "transcribe_ms": tr_ms, "e2e_ms": e2e_ms, "t_stored": time.time(), "redacted": red, "pii_spans": n_pii,
                                               "model": WHISPER_MODEL, "compute": WHISPER_COMPUTE}) + "\n")
                     raw_log.flush()
                 r.delete(f"cap:{cid}:audio", f"cap:{cid}")      # privacy: raw audio gone after transcription

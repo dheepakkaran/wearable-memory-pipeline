@@ -2,6 +2,7 @@
 (button_down, 5 s audio_chunk ..., button_up). Can replay events to test idempotent ingestion and can
 pace uploads in real time to measure end-to-end latency."""
 import argparse
+import json
 import base64
 import random
 import time
@@ -16,13 +17,13 @@ ROOT = Path(__file__).resolve().parent.parent
 SR, CHUNK_S, CAPTURE_S = 16_000, 5, 30
 
 
-def captures(meeting: str, limit: int | None):
+def captures(meeting: str, limit: int | None, start: int = 0):
     audio, sr = sf.read(ROOT / f"data/raw/{meeting}.wav", dtype="int16")
     if audio.ndim > 1:
         audio = audio[:, 0]
     assert sr == SR, sr
     n = len(audio) // (SR * CAPTURE_S) + (1 if len(audio) % (SR * CAPTURE_S) > SR * 3 else 0)
-    for i in range(n if limit is None else min(n, limit)):
+    for i in range(start, n if limit is None else min(n, start + limit)):
         seg = audio[i * SR * CAPTURE_S:(i + 1) * SR * CAPTURE_S]
         yield i, i * CAPTURE_S, i * CAPTURE_S + len(seg) / SR, seg
 
@@ -45,14 +46,17 @@ def main():
     ap.add_argument("--api", default="http://127.0.0.1:8091")
     ap.add_argument("--device", default="wrist-01")
     ap.add_argument("--limit", type=int)
+    ap.add_argument("--start", type=int, default=0, help="first capture index")
     ap.add_argument("--dup-rate", type=float, default=0.0, help="share of events re-sent (flaky network)")
     ap.add_argument("--realtime", action="store_true", help="send each chunk when it would exist on a real device")
+    ap.add_argument("--event-log", help="write a timeline of sent events (demo recording)")
     a = ap.parse_args()
+    a.log = open(a.event_log, "w") if a.event_log else None
     rnd = random.Random(7)
     sent = dups = ready = 0
     with httpx.Client(timeout=60) as http:
         for m in a.meetings:
-            for i, s, e, seg in captures(m, a.limit):
+            for i, s, e, seg in captures(m, a.limit, a.start):
                 evs = events_for(m, i, s, e, seg, a.device)
                 batch = []
                 for ev in evs:
@@ -67,6 +71,9 @@ def main():
                     if a.realtime:
                         res = http.post(f"{a.api}/events", json=batch).raise_for_status().json(); batch = []
                         ready += res["captures_ready"]
+                        if a.log:
+                            a.log.write(json.dumps({"t": time.time(), "type": ev["type"], "capture_id": ev["capture_id"],
+                                                    "seq": ev.get("seq", 0)}) + "\n"); a.log.flush()
                 if batch:
                     res = http.post(f"{a.api}/events", json=batch).raise_for_status().json()
                     ready += res["captures_ready"]

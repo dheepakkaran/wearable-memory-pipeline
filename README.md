@@ -8,7 +8,7 @@ The intelligence layer behind a screenless voice wearable, in miniature: a simul
 captures to a FastAPI backend, a real-time path transcribes them locally, a batch path summarizes the day and pulls out
 commitments and memories, personal details are redacted before anything is stored, and you can ask it what was said.
 
-[**Project page →**](https://dheepakkaran.github.io/wearable-memory-pipeline/) · [Results](RESULTS.md) · [What broke](FAILURES.md)
+[**Project page + live demo →**](https://dheepakkaran.github.io/wearable-memory-pipeline/#demo) · [Results](RESULTS.md) · [What broke](FAILURES.md)
 
 ![python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![fastapi](https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white)
@@ -50,6 +50,10 @@ text is stored, and only redacted text ever reaches the LLM.
 
 **Model routing:** the cheap model reads everything, plain code checks it, a mid model retries only what failed,
 and the strong model makes only the final decision. Every call goes to a cost ledger with a hard cap.
+
+## Demo
+
+The [project page](https://dheepakkaran.github.io/wearable-memory-pipeline/#demo) replays a real-time run recorded on 2026-11-11 (the last 3 minutes of AMI meeting ES2010a, uploaded by the simulated device at real speed): device events, Redis Stream hand-off, each transcript as stored (redactions marked, with what the recognizer heard), the end-of-day batch calls with their real tokens and cost, and the commitments checked against the human action items. Its search box runs BM25 in the browser over all 247 stored, redacted captures. Rebuild the demo data with `scripts/build_demo.py` after `sim/device.py ES2010a --start 16 --limit 6 --realtime --event-log results/demo_events.jsonl`.
 
 ## Results
 
