@@ -18,6 +18,10 @@ commitments and memories, personal details are redacted before anything is store
 ![claude](https://img.shields.io/badge/LLM-Haiku%20→%20Sonnet%20→%20Opus-D97757)
 ![tests](https://img.shields.io/badge/tests-12%20passing-22c55e)
 
+<a href="https://dheepakkaran.github.io/wearable-memory-pipeline/#overview"><img src="docs/media/overview.webp" alt="35-second overview: press the button, it writes down what was said, hides names, finds the promises, and answers questions" width="100%"></a>
+
+<sub>35-second overview (silent preview). <a href="https://dheepakkaran.github.io/wearable-memory-pipeline/#overview">Watch it with sound on the project page →</a></sub>
+
 </div>
 
 > **Data:** 8 meetings from the AMI Meeting Corpus (CC BY 4.0), played through a simulated device. There is no real hardware here, and meeting audio is not wrist audio. Independent learning project, not affiliated with any company.
